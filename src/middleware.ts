@@ -9,7 +9,7 @@ async function accessHash(code: string) {
 }
 
 export async function middleware(request: NextRequest) {
-  const code = process.env.ACCESS_CODE;
+  const code = process.env.ACCESS_CODE?.trim();
   if (!code) return NextResponse.next();
 
   const cookie = request.cookies.get("acceso")?.value;

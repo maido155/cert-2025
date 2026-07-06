@@ -7,3 +7,5 @@ certification-video-upload-manifest.json
 /dev-*.log
 /*.png
 .vercel
+
+.vercel

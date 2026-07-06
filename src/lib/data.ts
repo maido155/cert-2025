@@ -7,7 +7,7 @@ type RawData = Omit<AppData, "videos"> & { videos: RawVideo[] };
 const data = rawData as RawData;
 
 function cdnUrl(remoteKey: string) {
-  const base = process.env.NEXT_PUBLIC_VIDEO_BASE_URL?.replace(/\/$/, "");
+  const base = process.env.NEXT_PUBLIC_VIDEO_BASE_URL?.trim().replace(/\/$/, "");
   return base ? `${base}/${remoteKey}` : "";
 }
 

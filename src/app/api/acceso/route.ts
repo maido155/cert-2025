@@ -9,7 +9,7 @@ async function accessHash(code: string) {
 }
 
 export async function POST(request: NextRequest) {
-  const code = process.env.ACCESS_CODE;
+  const code = process.env.ACCESS_CODE?.trim();
   const form = await request.formData();
   const attempt = String(form.get("clave") ?? "").trim();
 
