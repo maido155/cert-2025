@@ -1,0 +1,5166 @@
+{
+  "generatedAt": "2026-07-05",
+  "storageStrategy": {
+    "localDev": "The Next.js API streams local files from localVideoPath.",
+    "production": "Upload videos to object storage/CDN and set NEXT_PUBLIC_VIDEO_BASE_URL. Keep only metadata and thumbnails in Vercel.",
+    "recommended": "Cloudflare R2 + public/custom domain, S3 + CloudFront, or Mux for transcoding and adaptive streaming."
+  },
+  "primarySeries": [
+    {
+      "slug": "surya-namaskara-a",
+      "sanskrit": "Surya Namaskara A",
+      "spanish": "Saludo al sol A",
+      "group": "sun"
+    },
+    {
+      "slug": "surya-namaskara-b",
+      "sanskrit": "Surya Namaskara B",
+      "spanish": "Saludo al sol B",
+      "group": "sun"
+    },
+    {
+      "slug": "padangusthasana",
+      "sanskrit": "Padangusthasana",
+      "spanish": "Manos a pies",
+      "group": "standing"
+    },
+    {
+      "slug": "padahastasana",
+      "sanskrit": "Padahastasana",
+      "spanish": "Manos bajo pies",
+      "group": "standing"
+    },
+    {
+      "slug": "utthita-trikonasana",
+      "sanskrit": "Utthita Trikonasana",
+      "spanish": "Triangulo extendido",
+      "group": "standing"
+    },
+    {
+      "slug": "parivrtta-trikonasana",
+      "sanskrit": "Parivrtta Trikonasana",
+      "spanish": "Triangulo girado",
+      "group": "standing"
+    },
+    {
+      "slug": "utthita-parsvakonasana",
+      "sanskrit": "Utthita Parsvakonasana",
+      "spanish": "Angulo lateral extendido",
+      "group": "standing"
+    },
+    {
+      "slug": "parivrtta-parsvakonasana",
+      "sanskrit": "Parivrtta Parsvakonasana",
+      "spanish": "Angulo lateral girado",
+      "group": "standing"
+    },
+    {
+      "slug": "prasarita-padottanasana",
+      "sanskrit": "Prasarita Padottanasana",
+      "spanish": "Flexion amplia de pie",
+      "group": "standing"
+    },
+    {
+      "slug": "parsvottanasana",
+      "sanskrit": "Parsvottanasana",
+      "spanish": "Estiramiento lateral intenso",
+      "group": "standing"
+    },
+    {
+      "slug": "utthita-hasta-padangusthasana",
+      "sanskrit": "Utthita Hasta Padangusthasana",
+      "spanish": "Pierna extendida tomada",
+      "group": "standing"
+    },
+    {
+      "slug": "ardha-baddha-padmottanasana",
+      "sanskrit": "Ardha Baddha Padmottanasana",
+      "spanish": "Medio loto de pie",
+      "group": "standing"
+    },
+    {
+      "slug": "utkatasana",
+      "sanskrit": "Utkatasana",
+      "spanish": "Silla",
+      "group": "standing"
+    },
+    {
+      "slug": "virabhadrasana",
+      "sanskrit": "Virabhadrasana I/II",
+      "spanish": "Guerreros",
+      "group": "standing"
+    },
+    {
+      "slug": "dandasana",
+      "sanskrit": "Dandasana",
+      "spanish": "Baston",
+      "group": "seated"
+    },
+    {
+      "slug": "paschimottanasana",
+      "sanskrit": "Paschimottanasana",
+      "spanish": "Pinza sentada",
+      "group": "seated"
+    },
+    {
+      "slug": "purvottanasana",
+      "sanskrit": "Purvottanasana",
+      "spanish": "Estiramiento anterior",
+      "group": "seated"
+    },
+    {
+      "slug": "ardha-baddha-padma-paschimottanasana",
+      "sanskrit": "Ardha Baddha Padma Paschimottanasana",
+      "spanish": "Medio loto sentado",
+      "group": "seated"
+    },
+    {
+      "slug": "triang-mukhaikapada-paschimottanasana",
+      "sanskrit": "Triang Mukhaikapada Paschimottanasana",
+      "spanish": "Una pierna doblada",
+      "group": "seated"
+    },
+    {
+      "slug": "janu-sirsasana",
+      "sanskrit": "Janu Sirsasana A/B/C",
+      "spanish": "Cabeza a rodilla",
+      "group": "seated"
+    },
+    {
+      "slug": "marichyasana",
+      "sanskrit": "Marichyasana A/B/C/D",
+      "spanish": "Posturas de Marichi",
+      "group": "seated"
+    },
+    {
+      "slug": "navasana",
+      "sanskrit": "Navasana",
+      "spanish": "Barco",
+      "group": "seated"
+    },
+    {
+      "slug": "bhuja-pidasana",
+      "sanskrit": "Bhuja Pidasana",
+      "spanish": "Presion en brazos",
+      "group": "arm-balance"
+    },
+    {
+      "slug": "kurmasana",
+      "sanskrit": "Kurmasana",
+      "spanish": "Tortuga",
+      "group": "seated"
+    },
+    {
+      "slug": "supta-kurmasana",
+      "sanskrit": "Supta Kurmasana",
+      "spanish": "Tortuga reclinada",
+      "group": "seated"
+    },
+    {
+      "slug": "garbha-pindasana",
+      "sanskrit": "Garbha Pindasana",
+      "spanish": "Embrión",
+      "group": "seated"
+    },
+    {
+      "slug": "kukutasana",
+      "sanskrit": "Kukutasana",
+      "spanish": "Gallo",
+      "group": "arm-balance"
+    },
+    {
+      "slug": "baddha-konasana",
+      "sanskrit": "Baddha Konasana",
+      "spanish": "Angulo cerrado",
+      "group": "seated"
+    },
+    {
+      "slug": "upavistha-konasana",
+      "sanskrit": "Upavistha Konasana",
+      "spanish": "Angulo abierto",
+      "group": "seated"
+    },
+    {
+      "slug": "supta-konasana",
+      "sanskrit": "Supta Konasana",
+      "spanish": "Angulo reclinado",
+      "group": "finishing"
+    },
+    {
+      "slug": "supta-padangusthasana",
+      "sanskrit": "Supta Padangusthasana",
+      "spanish": "Pierna tomada acostado",
+      "group": "finishing"
+    },
+    {
+      "slug": "urdhva-mukha-paschimottanasana",
+      "sanskrit": "Urdhva Mukha Paschimottanasana",
+      "spanish": "Pinza hacia arriba",
+      "group": "finishing"
+    },
+    {
+      "slug": "setu-bandhasana",
+      "sanskrit": "Setu Bandhasana",
+      "spanish": "Puente",
+      "group": "finishing"
+    },
+    {
+      "slug": "urdhva-dhanurasana",
+      "sanskrit": "Urdhva Dhanurasana",
+      "spanish": "Rueda",
+      "group": "backbend"
+    },
+    {
+      "slug": "sarvangasana",
+      "sanskrit": "Sarvangasana",
+      "spanish": "Vela",
+      "group": "finishing"
+    },
+    {
+      "slug": "halasana",
+      "sanskrit": "Halasana",
+      "spanish": "Arado",
+      "group": "finishing"
+    },
+    {
+      "slug": "karnapidasana",
+      "sanskrit": "Karnapidasana",
+      "spanish": "Presion de orejas",
+      "group": "finishing"
+    },
+    {
+      "slug": "urdhva-padmasana",
+      "sanskrit": "Urdhva Padmasana",
+      "spanish": "Loto elevado",
+      "group": "finishing"
+    },
+    {
+      "slug": "pindasana",
+      "sanskrit": "Pindasana",
+      "spanish": "Embrión en loto",
+      "group": "finishing"
+    },
+    {
+      "slug": "matsyasana",
+      "sanskrit": "Matsyasana",
+      "spanish": "Pez",
+      "group": "finishing"
+    },
+    {
+      "slug": "uttana-padasana",
+      "sanskrit": "Uttana Padasana",
+      "spanish": "Piernas extendidas",
+      "group": "finishing"
+    },
+    {
+      "slug": "sirsasana",
+      "sanskrit": "Sirsasana",
+      "spanish": "Parado de cabeza",
+      "group": "finishing"
+    },
+    {
+      "slug": "baddha-padmasana",
+      "sanskrit": "Baddha Padmasana",
+      "spanish": "Loto atado",
+      "group": "finishing"
+    },
+    {
+      "slug": "yoga-mudra",
+      "sanskrit": "Yoga Mudra",
+      "spanish": "Sello de yoga",
+      "group": "finishing"
+    },
+    {
+      "slug": "padmasana",
+      "sanskrit": "Padmasana",
+      "spanish": "Loto",
+      "group": "finishing"
+    },
+    {
+      "slug": "utpluthih",
+      "sanskrit": "Utpluthih",
+      "spanish": "Elevacion final",
+      "group": "finishing"
+    },
+    {
+      "slug": "savasana",
+      "sanskrit": "Savasana",
+      "spanish": "Descanso",
+      "group": "finishing"
+    }
+  ],
+  "stats": {
+    "count": 104,
+    "totalMb": 1415.35,
+    "byDate": {
+      "2025-03-29": 5,
+      "2025-06-08": 8,
+      "2025-06-21": 20,
+      "2025-06-22": 6,
+      "2025-08-10": 25,
+      "2025-08-30": 21,
+      "2025-08-31": 19
+    },
+    "byPose": {
+      "utthita-hasta-padangusthasana": 31,
+      "paschimottanasana": 27,
+      "janu-sirsasana": 25,
+      "marichyasana": 25,
+      "navasana": 20,
+      "baddha-konasana": 18,
+      "upavistha-konasana": 18,
+      "virabhadrasana": 14,
+      "prasarita-padottanasana": 14,
+      "utthita-parsvakonasana": 14,
+      "kurmasana": 14,
+      "bhuja-pidasana": 14,
+      "padangusthasana": 12,
+      "padahastasana": 12,
+      "supta-padangusthasana": 12
+    }
+  },
+  "sessions": [
+    {
+      "date": "2025-03-29",
+      "videoIds": [
+        "2207",
+        "2208",
+        "2209",
+        "2210",
+        "2211"
+      ]
+    },
+    {
+      "date": "2025-06-08",
+      "videoIds": [
+        "2268",
+        "2269",
+        "2270",
+        "2271",
+        "2272",
+        "2273",
+        "4160",
+        "4161"
+      ]
+    },
+    {
+      "date": "2025-06-21",
+      "videoIds": [
+        "4179",
+        "4180",
+        "4181",
+        "4182",
+        "4183",
+        "4184",
+        "4185",
+        "4186",
+        "4187",
+        "4188",
+        "4189",
+        "4190",
+        "4191",
+        "4192",
+        "4193",
+        "4194",
+        "4195",
+        "4196",
+        "4197",
+        "4198"
+      ]
+    },
+    {
+      "date": "2025-06-22",
+      "videoIds": [
+        "2276",
+        "2277",
+        "2278",
+        "2279",
+        "2280",
+        "2281"
+      ]
+    },
+    {
+      "date": "2025-08-10",
+      "videoIds": [
+        "4287",
+        "4288",
+        "4289",
+        "4290",
+        "4291",
+        "4292",
+        "4293",
+        "4294",
+        "4295",
+        "4296",
+        "4297",
+        "4298",
+        "4299",
+        "4300",
+        "4301",
+        "4302",
+        "4303",
+        "4304",
+        "4305",
+        "4306",
+        "4307",
+        "4308",
+        "4309",
+        "4310",
+        "4311"
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "videoIds": [
+        "88",
+        "2071",
+        "2072",
+        "2073",
+        "4327",
+        "4328",
+        "4329",
+        "4330",
+        "4331",
+        "4332",
+        "4333",
+        "4334",
+        "4335",
+        "4336",
+        "4337",
+        "4338",
+        "4339",
+        "4340",
+        "4341",
+        "4342",
+        "4343"
+      ]
+    },
+    {
+      "date": "2025-08-31",
+      "videoIds": [
+        "89",
+        "2325",
+        "2326",
+        "2327",
+        "2328",
+        "2329",
+        "2330",
+        "4344",
+        "4345",
+        "4346",
+        "4347",
+        "4348",
+        "4349",
+        "4350",
+        "4351",
+        "4352",
+        "4353",
+        "4354",
+        "4356"
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "id": "2207",
+      "title": "VID-20250329-WA0022.mp4",
+      "date": "2025-03-29",
+      "source": "WhatsApp Business",
+      "durationSec": 21.93,
+      "durationLabel": "0:22",
+      "orientation": "vertical",
+      "sizeMb": 8.67,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02207.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02207_20250329_WhatsApp_Business_VID-20250329-WA0022_01c73be9b5fe.mp4",
+      "videoFileName": "02207_20250329_WhatsApp_Business_VID-20250329-WA0022_01c73be9b5fe.mp4",
+      "remoteKey": "certificacion-2025/02207_20250329_WhatsApp_Business_VID-20250329-WA0022_01c73be9b5fe.mp4",
+      "playbackUrl": "/api/videos/2207",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "balance",
+        "certificacion-2025",
+        "demo",
+        "leg-extension",
+        "standing",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2208",
+      "title": "VID-20250329-WA0023.mp4",
+      "date": "2025-03-29",
+      "source": "WhatsApp Business",
+      "durationSec": 19.07,
+      "durationLabel": "0:19",
+      "orientation": "vertical",
+      "sizeMb": 7.49,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02208.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02208_20250329_WhatsApp_Business_VID-20250329-WA0023_03641af1df5a.mp4",
+      "videoFileName": "02208_20250329_WhatsApp_Business_VID-20250329-WA0023_03641af1df5a.mp4",
+      "remoteKey": "certificacion-2025/02208_20250329_WhatsApp_Business_VID-20250329-WA0023_03641af1df5a.mp4",
+      "playbackUrl": "/api/videos/2208",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "balance",
+        "certificacion-2025",
+        "demo",
+        "leg-extension",
+        "short-clip",
+        "standing",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2209",
+      "title": "VID-20250329-WA0024.mp4",
+      "date": "2025-03-29",
+      "source": "WhatsApp Business",
+      "durationSec": 29.2,
+      "durationLabel": "0:29",
+      "orientation": "vertical",
+      "sizeMb": 11.04,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02209.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02209_20250329_WhatsApp_Business_VID-20250329-WA0024_ec7884aa7afb.mp4",
+      "videoFileName": "02209_20250329_WhatsApp_Business_VID-20250329-WA0024_ec7884aa7afb.mp4",
+      "remoteKey": "certificacion-2025/02209_20250329_WhatsApp_Business_VID-20250329-WA0024_ec7884aa7afb.mp4",
+      "playbackUrl": "/api/videos/2209",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "balance",
+        "certificacion-2025",
+        "demo",
+        "leg-extension",
+        "standing",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2210",
+      "title": "VID-20250329-WA0025.mp4",
+      "date": "2025-03-29",
+      "source": "WhatsApp Business",
+      "durationSec": 16.6,
+      "durationLabel": "0:17",
+      "orientation": "vertical",
+      "sizeMb": 6.72,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02210.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02210_20250329_WhatsApp_Business_VID-20250329-WA0025_506921c40b89.mp4",
+      "videoFileName": "02210_20250329_WhatsApp_Business_VID-20250329-WA0025_506921c40b89.mp4",
+      "remoteKey": "certificacion-2025/02210_20250329_WhatsApp_Business_VID-20250329-WA0025_506921c40b89.mp4",
+      "playbackUrl": "/api/videos/2210",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "balance",
+        "certificacion-2025",
+        "demo",
+        "leg-extension",
+        "short-clip",
+        "standing",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2211",
+      "title": "VID-20250329-WA0026.mp4",
+      "date": "2025-03-29",
+      "source": "WhatsApp Business",
+      "durationSec": 24.96,
+      "durationLabel": "0:25",
+      "orientation": "vertical",
+      "sizeMb": 9.29,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02211.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02211_20250329_WhatsApp_Business_VID-20250329-WA0026_ea4d59918692.mp4",
+      "videoFileName": "02211_20250329_WhatsApp_Business_VID-20250329-WA0026_ea4d59918692.mp4",
+      "remoteKey": "certificacion-2025/02211_20250329_WhatsApp_Business_VID-20250329-WA0026_ea4d59918692.mp4",
+      "playbackUrl": "/api/videos/2211",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "balance",
+        "certificacion-2025",
+        "demo",
+        "leg-extension",
+        "standing",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2268",
+      "title": "VID-20250608-WA0065.mp4",
+      "date": "2025-06-08",
+      "source": "WhatsApp Business",
+      "durationSec": 105.02,
+      "durationLabel": "1:45",
+      "orientation": "vertical",
+      "sizeMb": 42.56,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02268.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02268_20250608_WhatsApp_Business_VID-20250608-WA0065_24aa223c79f9.mp4",
+      "videoFileName": "02268_20250608_WhatsApp_Business_VID-20250608-WA0065_24aa223c79f9.mp4",
+      "remoteKey": "certificacion-2025/02268_20250608_WhatsApp_Business_VID-20250608-WA0065_24aa223c79f9.mp4",
+      "playbackUrl": "/api/videos/2268",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        },
+        {
+          "slug": "virabhadrasana",
+          "sanskrit": "Virabhadrasana I/II",
+          "spanish": "Guerreros",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "balance",
+        "certificacion-2025",
+        "standing",
+        "teaching",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2269",
+      "title": "VID-20250608-WA0066.mp4",
+      "date": "2025-06-08",
+      "source": "WhatsApp Business",
+      "durationSec": 8.55,
+      "durationLabel": "0:09",
+      "orientation": "vertical",
+      "sizeMb": 3.2,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02269.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02269_20250608_WhatsApp_Business_VID-20250608-WA0066_8e758279a643.mp4",
+      "videoFileName": "02269_20250608_WhatsApp_Business_VID-20250608-WA0066_8e758279a643.mp4",
+      "remoteKey": "certificacion-2025/02269_20250608_WhatsApp_Business_VID-20250608-WA0066_8e758279a643.mp4",
+      "playbackUrl": "/api/videos/2269",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        },
+        {
+          "slug": "virabhadrasana",
+          "sanskrit": "Virabhadrasana I/II",
+          "spanish": "Guerreros",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "balance",
+        "certificacion-2025",
+        "short-clip",
+        "standing",
+        "teaching",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2270",
+      "title": "VID-20250608-WA0067.mp4",
+      "date": "2025-06-08",
+      "source": "WhatsApp Business",
+      "durationSec": 33.9,
+      "durationLabel": "0:34",
+      "orientation": "vertical",
+      "sizeMb": 13.83,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02270.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02270_20250608_WhatsApp_Business_VID-20250608-WA0067_fd44bb0422d3.mp4",
+      "videoFileName": "02270_20250608_WhatsApp_Business_VID-20250608-WA0067_fd44bb0422d3.mp4",
+      "remoteKey": "certificacion-2025/02270_20250608_WhatsApp_Business_VID-20250608-WA0067_fd44bb0422d3.mp4",
+      "playbackUrl": "/api/videos/2270",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        },
+        {
+          "slug": "virabhadrasana",
+          "sanskrit": "Virabhadrasana I/II",
+          "spanish": "Guerreros",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "balance",
+        "certificacion-2025",
+        "standing",
+        "teaching",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2271",
+      "title": "VID-20250608-WA0068.mp4",
+      "date": "2025-06-08",
+      "source": "WhatsApp Business",
+      "durationSec": 107.54,
+      "durationLabel": "1:48",
+      "orientation": "vertical",
+      "sizeMb": 40.04,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02271.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02271_20250608_WhatsApp_Business_VID-20250608-WA0068_e40985773ac7.mp4",
+      "videoFileName": "02271_20250608_WhatsApp_Business_VID-20250608-WA0068_e40985773ac7.mp4",
+      "remoteKey": "certificacion-2025/02271_20250608_WhatsApp_Business_VID-20250608-WA0068_e40985773ac7.mp4",
+      "playbackUrl": "/api/videos/2271",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        },
+        {
+          "slug": "virabhadrasana",
+          "sanskrit": "Virabhadrasana I/II",
+          "spanish": "Guerreros",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "balance",
+        "certificacion-2025",
+        "standing",
+        "teaching",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2272",
+      "title": "VID-20250608-WA0069.mp4",
+      "date": "2025-06-08",
+      "source": "WhatsApp Business",
+      "durationSec": 29.46,
+      "durationLabel": "0:29",
+      "orientation": "vertical",
+      "sizeMb": 11.93,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02272.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02272_20250608_WhatsApp_Business_VID-20250608-WA0069_082613f819bb.mp4",
+      "videoFileName": "02272_20250608_WhatsApp_Business_VID-20250608-WA0069_082613f819bb.mp4",
+      "remoteKey": "certificacion-2025/02272_20250608_WhatsApp_Business_VID-20250608-WA0069_082613f819bb.mp4",
+      "playbackUrl": "/api/videos/2272",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        },
+        {
+          "slug": "virabhadrasana",
+          "sanskrit": "Virabhadrasana I/II",
+          "spanish": "Guerreros",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "balance",
+        "certificacion-2025",
+        "standing",
+        "teaching",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2273",
+      "title": "VID-20250608-WA0070.mp4",
+      "date": "2025-06-08",
+      "source": "WhatsApp Business",
+      "durationSec": 63.42,
+      "durationLabel": "1:03",
+      "orientation": "vertical",
+      "sizeMb": 23.35,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02273.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02273_20250608_WhatsApp_Business_VID-20250608-WA0070_a7da51528677.mp4",
+      "videoFileName": "02273_20250608_WhatsApp_Business_VID-20250608-WA0070_a7da51528677.mp4",
+      "remoteKey": "certificacion-2025/02273_20250608_WhatsApp_Business_VID-20250608-WA0070_a7da51528677.mp4",
+      "playbackUrl": "/api/videos/2273",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        },
+        {
+          "slug": "virabhadrasana",
+          "sanskrit": "Virabhadrasana I/II",
+          "spanish": "Guerreros",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "balance",
+        "certificacion-2025",
+        "standing",
+        "teaching",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4160",
+      "title": "VID-20250608-WA0061.mp4",
+      "date": "2025-06-08",
+      "source": "WhatsApp",
+      "durationSec": 28.84,
+      "durationLabel": "0:29",
+      "orientation": "vertical",
+      "sizeMb": 10.31,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04160.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04160_20250608_WhatsApp_VID-20250608-WA0061_e3ba1aa6ae36.mp4",
+      "videoFileName": "04160_20250608_WhatsApp_VID-20250608-WA0061_e3ba1aa6ae36.mp4",
+      "remoteKey": "certificacion-2025/04160_20250608_WhatsApp_VID-20250608-WA0061_e3ba1aa6ae36.mp4",
+      "playbackUrl": "/api/videos/4160",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        },
+        {
+          "slug": "virabhadrasana",
+          "sanskrit": "Virabhadrasana I/II",
+          "spanish": "Guerreros",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "balance",
+        "certificacion-2025",
+        "standing",
+        "teaching",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4161",
+      "title": "VID-20250608-WA0062.mp4",
+      "date": "2025-06-08",
+      "source": "WhatsApp",
+      "durationSec": 31.44,
+      "durationLabel": "0:31",
+      "orientation": "vertical",
+      "sizeMb": 11.29,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04161.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04161_20250608_WhatsApp_VID-20250608-WA0062_fcf4243544f4.mp4",
+      "videoFileName": "04161_20250608_WhatsApp_VID-20250608-WA0062_fcf4243544f4.mp4",
+      "remoteKey": "certificacion-2025/04161_20250608_WhatsApp_VID-20250608-WA0062_fcf4243544f4.mp4",
+      "playbackUrl": "/api/videos/4161",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        },
+        {
+          "slug": "virabhadrasana",
+          "sanskrit": "Virabhadrasana I/II",
+          "spanish": "Guerreros",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "balance",
+        "certificacion-2025",
+        "standing",
+        "teaching",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4179",
+      "title": "VID-20250621-WA0030.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 25.4,
+      "durationLabel": "0:25",
+      "orientation": "vertical",
+      "sizeMb": 3.74,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04179.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04179_20250621_WhatsApp_VID-20250621-WA0030_899274e57843.mp4",
+      "videoFileName": "04179_20250621_WhatsApp_VID-20250621-WA0030_899274e57843.mp4",
+      "remoteKey": "certificacion-2025/04179_20250621_WhatsApp_VID-20250621-WA0030_899274e57843.mp4",
+      "playbackUrl": "/api/videos/4179",
+      "poses": [
+        {
+          "slug": "prasarita-padottanasana",
+          "sanskrit": "Prasarita Padottanasana",
+          "spanish": "Flexion amplia de pie",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-parsvakonasana",
+          "sanskrit": "Utthita Parsvakonasana",
+          "spanish": "Angulo lateral extendido",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "group-practice",
+        "standing",
+        "vertical",
+        "whatsapp-batch",
+        "wide-leg"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4180",
+      "title": "VID-20250621-WA0031.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 37.78,
+      "durationLabel": "0:38",
+      "orientation": "vertical",
+      "sizeMb": 5.58,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04180.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04180_20250621_WhatsApp_VID-20250621-WA0031_6a708a6f41fc.mp4",
+      "videoFileName": "04180_20250621_WhatsApp_VID-20250621-WA0031_6a708a6f41fc.mp4",
+      "remoteKey": "certificacion-2025/04180_20250621_WhatsApp_VID-20250621-WA0031_6a708a6f41fc.mp4",
+      "playbackUrl": "/api/videos/4180",
+      "poses": [
+        {
+          "slug": "prasarita-padottanasana",
+          "sanskrit": "Prasarita Padottanasana",
+          "spanish": "Flexion amplia de pie",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-parsvakonasana",
+          "sanskrit": "Utthita Parsvakonasana",
+          "spanish": "Angulo lateral extendido",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "group-practice",
+        "standing",
+        "vertical",
+        "whatsapp-batch",
+        "wide-leg"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4181",
+      "title": "VID-20250621-WA0032.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 50.2,
+      "durationLabel": "0:50",
+      "orientation": "vertical",
+      "sizeMb": 7.38,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04181.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04181_20250621_WhatsApp_VID-20250621-WA0032_0bc2322d978d.mp4",
+      "videoFileName": "04181_20250621_WhatsApp_VID-20250621-WA0032_0bc2322d978d.mp4",
+      "remoteKey": "certificacion-2025/04181_20250621_WhatsApp_VID-20250621-WA0032_0bc2322d978d.mp4",
+      "playbackUrl": "/api/videos/4181",
+      "poses": [
+        {
+          "slug": "prasarita-padottanasana",
+          "sanskrit": "Prasarita Padottanasana",
+          "spanish": "Flexion amplia de pie",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-parsvakonasana",
+          "sanskrit": "Utthita Parsvakonasana",
+          "spanish": "Angulo lateral extendido",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "group-practice",
+        "standing",
+        "vertical",
+        "whatsapp-batch",
+        "wide-leg"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4182",
+      "title": "VID-20250621-WA0033.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 22.59,
+      "durationLabel": "0:23",
+      "orientation": "vertical",
+      "sizeMb": 7.78,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04182.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04182_20250621_WhatsApp_VID-20250621-WA0033_73e6d6bee117.mp4",
+      "videoFileName": "04182_20250621_WhatsApp_VID-20250621-WA0033_73e6d6bee117.mp4",
+      "remoteKey": "certificacion-2025/04182_20250621_WhatsApp_VID-20250621-WA0033_73e6d6bee117.mp4",
+      "playbackUrl": "/api/videos/4182",
+      "poses": [
+        {
+          "slug": "prasarita-padottanasana",
+          "sanskrit": "Prasarita Padottanasana",
+          "spanish": "Flexion amplia de pie",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-parsvakonasana",
+          "sanskrit": "Utthita Parsvakonasana",
+          "spanish": "Angulo lateral extendido",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "group-practice",
+        "standing",
+        "vertical",
+        "whatsapp-batch",
+        "wide-leg"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4183",
+      "title": "VID-20250621-WA0034.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 17.72,
+      "durationLabel": "0:18",
+      "orientation": "vertical",
+      "sizeMb": 6.03,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04183.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04183_20250621_WhatsApp_VID-20250621-WA0034_a9d1dc9c1140.mp4",
+      "videoFileName": "04183_20250621_WhatsApp_VID-20250621-WA0034_a9d1dc9c1140.mp4",
+      "remoteKey": "certificacion-2025/04183_20250621_WhatsApp_VID-20250621-WA0034_a9d1dc9c1140.mp4",
+      "playbackUrl": "/api/videos/4183",
+      "poses": [
+        {
+          "slug": "padangusthasana",
+          "sanskrit": "Padangusthasana",
+          "spanish": "Manos a pies",
+          "group": "standing"
+        },
+        {
+          "slug": "padahastasana",
+          "sanskrit": "Padahastasana",
+          "spanish": "Manos bajo pies",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "balance",
+        "certificacion-2025",
+        "demo",
+        "forward-fold",
+        "short-clip",
+        "standing",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4184",
+      "title": "VID-20250621-WA0035.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 26.17,
+      "durationLabel": "0:26",
+      "orientation": "vertical",
+      "sizeMb": 8.96,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04184.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04184_20250621_WhatsApp_VID-20250621-WA0035_ba4ce7883f12.mp4",
+      "videoFileName": "04184_20250621_WhatsApp_VID-20250621-WA0035_ba4ce7883f12.mp4",
+      "remoteKey": "certificacion-2025/04184_20250621_WhatsApp_VID-20250621-WA0035_ba4ce7883f12.mp4",
+      "playbackUrl": "/api/videos/4184",
+      "poses": [
+        {
+          "slug": "prasarita-padottanasana",
+          "sanskrit": "Prasarita Padottanasana",
+          "spanish": "Flexion amplia de pie",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-parsvakonasana",
+          "sanskrit": "Utthita Parsvakonasana",
+          "spanish": "Angulo lateral extendido",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "group-practice",
+        "standing",
+        "vertical",
+        "whatsapp-batch",
+        "wide-leg"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4185",
+      "title": "VID-20250621-WA0036.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 78.12,
+      "durationLabel": "1:18",
+      "orientation": "vertical",
+      "sizeMb": 26.61,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04185.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04185_20250621_WhatsApp_VID-20250621-WA0036_170e7db0d146.mp4",
+      "videoFileName": "04185_20250621_WhatsApp_VID-20250621-WA0036_170e7db0d146.mp4",
+      "remoteKey": "certificacion-2025/04185_20250621_WhatsApp_VID-20250621-WA0036_170e7db0d146.mp4",
+      "playbackUrl": "/api/videos/4185",
+      "poses": [
+        {
+          "slug": "prasarita-padottanasana",
+          "sanskrit": "Prasarita Padottanasana",
+          "spanish": "Flexion amplia de pie",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-parsvakonasana",
+          "sanskrit": "Utthita Parsvakonasana",
+          "spanish": "Angulo lateral extendido",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "group-practice",
+        "standing",
+        "vertical",
+        "whatsapp-batch",
+        "wide-leg"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4186",
+      "title": "VID-20250621-WA0037.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 25.03,
+      "durationLabel": "0:25",
+      "orientation": "vertical",
+      "sizeMb": 8.6,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04186.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04186_20250621_WhatsApp_VID-20250621-WA0037_5bc6f7284e97.mp4",
+      "videoFileName": "04186_20250621_WhatsApp_VID-20250621-WA0037_5bc6f7284e97.mp4",
+      "remoteKey": "certificacion-2025/04186_20250621_WhatsApp_VID-20250621-WA0037_5bc6f7284e97.mp4",
+      "playbackUrl": "/api/videos/4186",
+      "poses": [
+        {
+          "slug": "prasarita-padottanasana",
+          "sanskrit": "Prasarita Padottanasana",
+          "spanish": "Flexion amplia de pie",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-parsvakonasana",
+          "sanskrit": "Utthita Parsvakonasana",
+          "spanish": "Angulo lateral extendido",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "group-practice",
+        "standing",
+        "vertical",
+        "whatsapp-batch",
+        "wide-leg"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4187",
+      "title": "VID-20250621-WA0038.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 24.03,
+      "durationLabel": "0:24",
+      "orientation": "vertical",
+      "sizeMb": 8.2,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04187.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04187_20250621_WhatsApp_VID-20250621-WA0038_fc1bdb64382d.mp4",
+      "videoFileName": "04187_20250621_WhatsApp_VID-20250621-WA0038_fc1bdb64382d.mp4",
+      "remoteKey": "certificacion-2025/04187_20250621_WhatsApp_VID-20250621-WA0038_fc1bdb64382d.mp4",
+      "playbackUrl": "/api/videos/4187",
+      "poses": [
+        {
+          "slug": "padangusthasana",
+          "sanskrit": "Padangusthasana",
+          "spanish": "Manos a pies",
+          "group": "standing"
+        },
+        {
+          "slug": "padahastasana",
+          "sanskrit": "Padahastasana",
+          "spanish": "Manos bajo pies",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "balance",
+        "certificacion-2025",
+        "demo",
+        "forward-fold",
+        "standing",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4188",
+      "title": "VID-20250621-WA0039.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 37.83,
+      "durationLabel": "0:38",
+      "orientation": "vertical",
+      "sizeMb": 12.99,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04188.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04188_20250621_WhatsApp_VID-20250621-WA0039_3d8fcc19cbfd.mp4",
+      "videoFileName": "04188_20250621_WhatsApp_VID-20250621-WA0039_3d8fcc19cbfd.mp4",
+      "remoteKey": "certificacion-2025/04188_20250621_WhatsApp_VID-20250621-WA0039_3d8fcc19cbfd.mp4",
+      "playbackUrl": "/api/videos/4188",
+      "poses": [
+        {
+          "slug": "padangusthasana",
+          "sanskrit": "Padangusthasana",
+          "spanish": "Manos a pies",
+          "group": "standing"
+        },
+        {
+          "slug": "padahastasana",
+          "sanskrit": "Padahastasana",
+          "spanish": "Manos bajo pies",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "balance",
+        "certificacion-2025",
+        "demo",
+        "forward-fold",
+        "standing",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4189",
+      "title": "VID-20250621-WA0040.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 37.76,
+      "durationLabel": "0:38",
+      "orientation": "vertical",
+      "sizeMb": 12.9,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04189.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04189_20250621_WhatsApp_VID-20250621-WA0040_1da0534b5ff0.mp4",
+      "videoFileName": "04189_20250621_WhatsApp_VID-20250621-WA0040_1da0534b5ff0.mp4",
+      "remoteKey": "certificacion-2025/04189_20250621_WhatsApp_VID-20250621-WA0040_1da0534b5ff0.mp4",
+      "playbackUrl": "/api/videos/4189",
+      "poses": [
+        {
+          "slug": "padangusthasana",
+          "sanskrit": "Padangusthasana",
+          "spanish": "Manos a pies",
+          "group": "standing"
+        },
+        {
+          "slug": "padahastasana",
+          "sanskrit": "Padahastasana",
+          "spanish": "Manos bajo pies",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "balance",
+        "certificacion-2025",
+        "demo",
+        "forward-fold",
+        "standing",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4190",
+      "title": "VID-20250621-WA0041.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 37.93,
+      "durationLabel": "0:38",
+      "orientation": "vertical",
+      "sizeMb": 12.91,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04190.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04190_20250621_WhatsApp_VID-20250621-WA0041_de3712537a6b.mp4",
+      "videoFileName": "04190_20250621_WhatsApp_VID-20250621-WA0041_de3712537a6b.mp4",
+      "remoteKey": "certificacion-2025/04190_20250621_WhatsApp_VID-20250621-WA0041_de3712537a6b.mp4",
+      "playbackUrl": "/api/videos/4190",
+      "poses": [
+        {
+          "slug": "prasarita-padottanasana",
+          "sanskrit": "Prasarita Padottanasana",
+          "spanish": "Flexion amplia de pie",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-parsvakonasana",
+          "sanskrit": "Utthita Parsvakonasana",
+          "spanish": "Angulo lateral extendido",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "group-practice",
+        "standing",
+        "vertical",
+        "whatsapp-batch",
+        "wide-leg"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4191",
+      "title": "VID-20250621-WA0042.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 36.67,
+      "durationLabel": "0:37",
+      "orientation": "vertical",
+      "sizeMb": 12.46,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04191.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04191_20250621_WhatsApp_VID-20250621-WA0042_f44ddcd1d9c1.mp4",
+      "videoFileName": "04191_20250621_WhatsApp_VID-20250621-WA0042_f44ddcd1d9c1.mp4",
+      "remoteKey": "certificacion-2025/04191_20250621_WhatsApp_VID-20250621-WA0042_f44ddcd1d9c1.mp4",
+      "playbackUrl": "/api/videos/4191",
+      "poses": [
+        {
+          "slug": "prasarita-padottanasana",
+          "sanskrit": "Prasarita Padottanasana",
+          "spanish": "Flexion amplia de pie",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-parsvakonasana",
+          "sanskrit": "Utthita Parsvakonasana",
+          "spanish": "Angulo lateral extendido",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "group-practice",
+        "standing",
+        "vertical",
+        "whatsapp-batch",
+        "wide-leg"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4192",
+      "title": "VID-20250621-WA0043.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 79.16,
+      "durationLabel": "1:19",
+      "orientation": "vertical",
+      "sizeMb": 26.92,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04192.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04192_20250621_WhatsApp_VID-20250621-WA0043_652f364d5892.mp4",
+      "videoFileName": "04192_20250621_WhatsApp_VID-20250621-WA0043_652f364d5892.mp4",
+      "remoteKey": "certificacion-2025/04192_20250621_WhatsApp_VID-20250621-WA0043_652f364d5892.mp4",
+      "playbackUrl": "/api/videos/4192",
+      "poses": [
+        {
+          "slug": "padangusthasana",
+          "sanskrit": "Padangusthasana",
+          "spanish": "Manos a pies",
+          "group": "standing"
+        },
+        {
+          "slug": "padahastasana",
+          "sanskrit": "Padahastasana",
+          "spanish": "Manos bajo pies",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "balance",
+        "certificacion-2025",
+        "demo",
+        "forward-fold",
+        "standing",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4193",
+      "title": "VID-20250621-WA0044.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 56.97,
+      "durationLabel": "0:57",
+      "orientation": "vertical",
+      "sizeMb": 19.46,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04193.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04193_20250621_WhatsApp_VID-20250621-WA0044_15d833660158.mp4",
+      "videoFileName": "04193_20250621_WhatsApp_VID-20250621-WA0044_15d833660158.mp4",
+      "remoteKey": "certificacion-2025/04193_20250621_WhatsApp_VID-20250621-WA0044_15d833660158.mp4",
+      "playbackUrl": "/api/videos/4193",
+      "poses": [
+        {
+          "slug": "padangusthasana",
+          "sanskrit": "Padangusthasana",
+          "spanish": "Manos a pies",
+          "group": "standing"
+        },
+        {
+          "slug": "padahastasana",
+          "sanskrit": "Padahastasana",
+          "spanish": "Manos bajo pies",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "balance",
+        "certificacion-2025",
+        "demo",
+        "forward-fold",
+        "standing",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4194",
+      "title": "VID-20250621-WA0045.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 71.38,
+      "durationLabel": "1:11",
+      "orientation": "vertical",
+      "sizeMb": 24.3,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04194.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04194_20250621_WhatsApp_VID-20250621-WA0045_b82b6c2bb09a.mp4",
+      "videoFileName": "04194_20250621_WhatsApp_VID-20250621-WA0045_b82b6c2bb09a.mp4",
+      "remoteKey": "certificacion-2025/04194_20250621_WhatsApp_VID-20250621-WA0045_b82b6c2bb09a.mp4",
+      "playbackUrl": "/api/videos/4194",
+      "poses": [
+        {
+          "slug": "padangusthasana",
+          "sanskrit": "Padangusthasana",
+          "spanish": "Manos a pies",
+          "group": "standing"
+        },
+        {
+          "slug": "padahastasana",
+          "sanskrit": "Padahastasana",
+          "spanish": "Manos bajo pies",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "balance",
+        "certificacion-2025",
+        "demo",
+        "forward-fold",
+        "standing",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4195",
+      "title": "VID-20250621-WA0046.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 61.09,
+      "durationLabel": "1:01",
+      "orientation": "vertical",
+      "sizeMb": 20.91,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04195.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04195_20250621_WhatsApp_VID-20250621-WA0046_20c712c226bf.mp4",
+      "videoFileName": "04195_20250621_WhatsApp_VID-20250621-WA0046_20c712c226bf.mp4",
+      "remoteKey": "certificacion-2025/04195_20250621_WhatsApp_VID-20250621-WA0046_20c712c226bf.mp4",
+      "playbackUrl": "/api/videos/4195",
+      "poses": [
+        {
+          "slug": "prasarita-padottanasana",
+          "sanskrit": "Prasarita Padottanasana",
+          "spanish": "Flexion amplia de pie",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-parsvakonasana",
+          "sanskrit": "Utthita Parsvakonasana",
+          "spanish": "Angulo lateral extendido",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "group-practice",
+        "standing",
+        "vertical",
+        "whatsapp-batch",
+        "wide-leg"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4196",
+      "title": "VID-20250621-WA0047.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 80.05,
+      "durationLabel": "1:20",
+      "orientation": "vertical",
+      "sizeMb": 27.43,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04196.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04196_20250621_WhatsApp_VID-20250621-WA0047_b127ff3160b7.mp4",
+      "videoFileName": "04196_20250621_WhatsApp_VID-20250621-WA0047_b127ff3160b7.mp4",
+      "remoteKey": "certificacion-2025/04196_20250621_WhatsApp_VID-20250621-WA0047_b127ff3160b7.mp4",
+      "playbackUrl": "/api/videos/4196",
+      "poses": [
+        {
+          "slug": "padangusthasana",
+          "sanskrit": "Padangusthasana",
+          "spanish": "Manos a pies",
+          "group": "standing"
+        },
+        {
+          "slug": "padahastasana",
+          "sanskrit": "Padahastasana",
+          "spanish": "Manos bajo pies",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "balance",
+        "certificacion-2025",
+        "demo",
+        "forward-fold",
+        "standing",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4197",
+      "title": "VID-20250621-WA0048.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 79.85,
+      "durationLabel": "1:20",
+      "orientation": "vertical",
+      "sizeMb": 27.06,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04197.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04197_20250621_WhatsApp_VID-20250621-WA0048_c637f3220df3.mp4",
+      "videoFileName": "04197_20250621_WhatsApp_VID-20250621-WA0048_c637f3220df3.mp4",
+      "remoteKey": "certificacion-2025/04197_20250621_WhatsApp_VID-20250621-WA0048_c637f3220df3.mp4",
+      "playbackUrl": "/api/videos/4197",
+      "poses": [
+        {
+          "slug": "prasarita-padottanasana",
+          "sanskrit": "Prasarita Padottanasana",
+          "spanish": "Flexion amplia de pie",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-parsvakonasana",
+          "sanskrit": "Utthita Parsvakonasana",
+          "spanish": "Angulo lateral extendido",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "group-practice",
+        "standing",
+        "vertical",
+        "whatsapp-batch",
+        "wide-leg"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4198",
+      "title": "VID-20250621-WA0049.mp4",
+      "date": "2025-06-21",
+      "source": "WhatsApp",
+      "durationSec": 104.82,
+      "durationLabel": "1:45",
+      "orientation": "vertical",
+      "sizeMb": 35.81,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04198.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04198_20250621_WhatsApp_VID-20250621-WA0049_dea88c9bc539.mp4",
+      "videoFileName": "04198_20250621_WhatsApp_VID-20250621-WA0049_dea88c9bc539.mp4",
+      "remoteKey": "certificacion-2025/04198_20250621_WhatsApp_VID-20250621-WA0049_dea88c9bc539.mp4",
+      "playbackUrl": "/api/videos/4198",
+      "poses": [
+        {
+          "slug": "prasarita-padottanasana",
+          "sanskrit": "Prasarita Padottanasana",
+          "spanish": "Flexion amplia de pie",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-parsvakonasana",
+          "sanskrit": "Utthita Parsvakonasana",
+          "spanish": "Angulo lateral extendido",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "group-practice",
+        "standing",
+        "vertical",
+        "whatsapp-batch",
+        "wide-leg"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2276",
+      "title": "VID-20250622-WA0013.mp4",
+      "date": "2025-06-22",
+      "source": "WhatsApp Business",
+      "durationSec": 27.54,
+      "durationLabel": "0:28",
+      "orientation": "vertical",
+      "sizeMb": 9.21,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02276.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02276_20250622_WhatsApp_Business_VID-20250622-WA0013_fb6734883625.mp4",
+      "videoFileName": "02276_20250622_WhatsApp_Business_VID-20250622-WA0013_fb6734883625.mp4",
+      "remoteKey": "certificacion-2025/02276_20250622_WhatsApp_Business_VID-20250622-WA0013_fb6734883625.mp4",
+      "playbackUrl": "/api/videos/2276",
+      "poses": [
+        {
+          "slug": "padangusthasana",
+          "sanskrit": "Padangusthasana",
+          "spanish": "Manos a pies",
+          "group": "standing"
+        },
+        {
+          "slug": "padahastasana",
+          "sanskrit": "Padahastasana",
+          "spanish": "Manos bajo pies",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "balance",
+        "certificacion-2025",
+        "demo",
+        "forward-fold",
+        "standing",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2277",
+      "title": "VID-20250622-WA0014.mp4",
+      "date": "2025-06-22",
+      "source": "WhatsApp Business",
+      "durationSec": 26.03,
+      "durationLabel": "0:26",
+      "orientation": "vertical",
+      "sizeMb": 8.71,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02277.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02277_20250622_WhatsApp_Business_VID-20250622-WA0014_42e931ac2028.mp4",
+      "videoFileName": "02277_20250622_WhatsApp_Business_VID-20250622-WA0014_42e931ac2028.mp4",
+      "remoteKey": "certificacion-2025/02277_20250622_WhatsApp_Business_VID-20250622-WA0014_42e931ac2028.mp4",
+      "playbackUrl": "/api/videos/2277",
+      "poses": [
+        {
+          "slug": "padangusthasana",
+          "sanskrit": "Padangusthasana",
+          "spanish": "Manos a pies",
+          "group": "standing"
+        },
+        {
+          "slug": "padahastasana",
+          "sanskrit": "Padahastasana",
+          "spanish": "Manos bajo pies",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "balance",
+        "certificacion-2025",
+        "demo",
+        "forward-fold",
+        "standing",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2278",
+      "title": "VID-20250622-WA0015.mp4",
+      "date": "2025-06-22",
+      "source": "WhatsApp Business",
+      "durationSec": 44.56,
+      "durationLabel": "0:45",
+      "orientation": "vertical",
+      "sizeMb": 14.95,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02278.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02278_20250622_WhatsApp_Business_VID-20250622-WA0015_1c7cb5a20f8c.mp4",
+      "videoFileName": "02278_20250622_WhatsApp_Business_VID-20250622-WA0015_1c7cb5a20f8c.mp4",
+      "remoteKey": "certificacion-2025/02278_20250622_WhatsApp_Business_VID-20250622-WA0015_1c7cb5a20f8c.mp4",
+      "playbackUrl": "/api/videos/2278",
+      "poses": [
+        {
+          "slug": "padangusthasana",
+          "sanskrit": "Padangusthasana",
+          "spanish": "Manos a pies",
+          "group": "standing"
+        },
+        {
+          "slug": "padahastasana",
+          "sanskrit": "Padahastasana",
+          "spanish": "Manos bajo pies",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "balance",
+        "certificacion-2025",
+        "demo",
+        "forward-fold",
+        "standing",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2279",
+      "title": "VID-20250622-WA0016.mp4",
+      "date": "2025-06-22",
+      "source": "WhatsApp Business",
+      "durationSec": 45.48,
+      "durationLabel": "0:45",
+      "orientation": "vertical",
+      "sizeMb": 15.23,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02279.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02279_20250622_WhatsApp_Business_VID-20250622-WA0016_80e5b8f3c335.mp4",
+      "videoFileName": "02279_20250622_WhatsApp_Business_VID-20250622-WA0016_80e5b8f3c335.mp4",
+      "remoteKey": "certificacion-2025/02279_20250622_WhatsApp_Business_VID-20250622-WA0016_80e5b8f3c335.mp4",
+      "playbackUrl": "/api/videos/2279",
+      "poses": [
+        {
+          "slug": "padangusthasana",
+          "sanskrit": "Padangusthasana",
+          "spanish": "Manos a pies",
+          "group": "standing"
+        },
+        {
+          "slug": "padahastasana",
+          "sanskrit": "Padahastasana",
+          "spanish": "Manos bajo pies",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "balance",
+        "certificacion-2025",
+        "demo",
+        "forward-fold",
+        "standing",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2280",
+      "title": "VID-20250622-WA0017.mp4",
+      "date": "2025-06-22",
+      "source": "WhatsApp Business",
+      "durationSec": 123.58,
+      "durationLabel": "2:04",
+      "orientation": "vertical",
+      "sizeMb": 41.36,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02280.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02280_20250622_WhatsApp_Business_VID-20250622-WA0017_ff03626a7da8.mp4",
+      "videoFileName": "02280_20250622_WhatsApp_Business_VID-20250622-WA0017_ff03626a7da8.mp4",
+      "remoteKey": "certificacion-2025/02280_20250622_WhatsApp_Business_VID-20250622-WA0017_ff03626a7da8.mp4",
+      "playbackUrl": "/api/videos/2280",
+      "poses": [
+        {
+          "slug": "prasarita-padottanasana",
+          "sanskrit": "Prasarita Padottanasana",
+          "spanish": "Flexion amplia de pie",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-parsvakonasana",
+          "sanskrit": "Utthita Parsvakonasana",
+          "spanish": "Angulo lateral extendido",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "group-practice",
+        "standing",
+        "vertical",
+        "whatsapp-batch",
+        "wide-leg"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2281",
+      "title": "VID-20250622-WA0018.mp4",
+      "date": "2025-06-22",
+      "source": "WhatsApp Business",
+      "durationSec": 73.13,
+      "durationLabel": "1:13",
+      "orientation": "vertical",
+      "sizeMb": 24.45,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02281.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02281_20250622_WhatsApp_Business_VID-20250622-WA0018_8393490f4316.mp4",
+      "videoFileName": "02281_20250622_WhatsApp_Business_VID-20250622-WA0018_8393490f4316.mp4",
+      "remoteKey": "certificacion-2025/02281_20250622_WhatsApp_Business_VID-20250622-WA0018_8393490f4316.mp4",
+      "playbackUrl": "/api/videos/2281",
+      "poses": [
+        {
+          "slug": "prasarita-padottanasana",
+          "sanskrit": "Prasarita Padottanasana",
+          "spanish": "Flexion amplia de pie",
+          "group": "standing"
+        },
+        {
+          "slug": "utthita-parsvakonasana",
+          "sanskrit": "Utthita Parsvakonasana",
+          "spanish": "Angulo lateral extendido",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "group-practice",
+        "standing",
+        "vertical",
+        "whatsapp-batch",
+        "wide-leg"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4287",
+      "title": "VID-20250810-WA0008.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 23.24,
+      "durationLabel": "0:23",
+      "orientation": "vertical",
+      "sizeMb": 7.92,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04287.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04287_20250810_WhatsApp_VID-20250810-WA0008_493b964e7a36.mp4",
+      "videoFileName": "04287_20250810_WhatsApp_VID-20250810-WA0008_493b964e7a36.mp4",
+      "remoteKey": "certificacion-2025/04287_20250810_WhatsApp_VID-20250810-WA0008_493b964e7a36.mp4",
+      "playbackUrl": "/api/videos/4287",
+      "poses": [
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "forward-fold",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4288",
+      "title": "VID-20250810-WA0009.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 24.22,
+      "durationLabel": "0:24",
+      "orientation": "vertical",
+      "sizeMb": 3.8,
+      "width": 480,
+      "height": 848,
+      "thumbnail": "/thumbs/04288.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04288_20250810_WhatsApp_VID-20250810-WA0009_49b7ffe6f92c.mp4",
+      "videoFileName": "04288_20250810_WhatsApp_VID-20250810-WA0009_49b7ffe6f92c.mp4",
+      "remoteKey": "certificacion-2025/04288_20250810_WhatsApp_VID-20250810-WA0009_49b7ffe6f92c.mp4",
+      "playbackUrl": "/api/videos/4288",
+      "poses": [
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        },
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "forward-fold",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4289",
+      "title": "VID-20250810-WA0010.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 18.4,
+      "durationLabel": "0:18",
+      "orientation": "vertical",
+      "sizeMb": 2.9,
+      "width": 480,
+      "height": 848,
+      "thumbnail": "/thumbs/04289.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04289_20250810_WhatsApp_VID-20250810-WA0010_b8db8bae1865.mp4",
+      "videoFileName": "04289_20250810_WhatsApp_VID-20250810-WA0010_b8db8bae1865.mp4",
+      "remoteKey": "certificacion-2025/04289_20250810_WhatsApp_VID-20250810-WA0010_b8db8bae1865.mp4",
+      "playbackUrl": "/api/videos/4289",
+      "poses": [
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        },
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "forward-fold",
+        "seated",
+        "short-clip",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4290",
+      "title": "VID-20250810-WA0011.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 47.82,
+      "durationLabel": "0:48",
+      "orientation": "vertical",
+      "sizeMb": 7.38,
+      "width": 480,
+      "height": 848,
+      "thumbnail": "/thumbs/04290.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04290_20250810_WhatsApp_VID-20250810-WA0011_2854c58257cf.mp4",
+      "videoFileName": "04290_20250810_WhatsApp_VID-20250810-WA0011_2854c58257cf.mp4",
+      "remoteKey": "certificacion-2025/04290_20250810_WhatsApp_VID-20250810-WA0011_2854c58257cf.mp4",
+      "playbackUrl": "/api/videos/4290",
+      "poses": [
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        },
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "forward-fold",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4291",
+      "title": "VID-20250810-WA0012.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 13.31,
+      "durationLabel": "0:13",
+      "orientation": "vertical",
+      "sizeMb": 2.09,
+      "width": 480,
+      "height": 848,
+      "thumbnail": "/thumbs/04291.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04291_20250810_WhatsApp_VID-20250810-WA0012_124cc74f632c.mp4",
+      "videoFileName": "04291_20250810_WhatsApp_VID-20250810-WA0012_124cc74f632c.mp4",
+      "remoteKey": "certificacion-2025/04291_20250810_WhatsApp_VID-20250810-WA0012_124cc74f632c.mp4",
+      "playbackUrl": "/api/videos/4291",
+      "poses": [
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        },
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "forward-fold",
+        "seated",
+        "short-clip",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4292",
+      "title": "VID-20250810-WA0013.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 52.52,
+      "durationLabel": "0:53",
+      "orientation": "vertical",
+      "sizeMb": 8.14,
+      "width": 480,
+      "height": 848,
+      "thumbnail": "/thumbs/04292.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04292_20250810_WhatsApp_VID-20250810-WA0013_80148a538275.mp4",
+      "videoFileName": "04292_20250810_WhatsApp_VID-20250810-WA0013_80148a538275.mp4",
+      "remoteKey": "certificacion-2025/04292_20250810_WhatsApp_VID-20250810-WA0013_80148a538275.mp4",
+      "playbackUrl": "/api/videos/4292",
+      "poses": [
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        },
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "forward-fold",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4293",
+      "title": "VID-20250810-WA0014.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 29.07,
+      "durationLabel": "0:29",
+      "orientation": "vertical",
+      "sizeMb": 4.52,
+      "width": 480,
+      "height": 848,
+      "thumbnail": "/thumbs/04293.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04293_20250810_WhatsApp_VID-20250810-WA0014_e3b06cdaef71.mp4",
+      "videoFileName": "04293_20250810_WhatsApp_VID-20250810-WA0014_e3b06cdaef71.mp4",
+      "remoteKey": "certificacion-2025/04293_20250810_WhatsApp_VID-20250810-WA0014_e3b06cdaef71.mp4",
+      "playbackUrl": "/api/videos/4293",
+      "poses": [
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "forward-fold",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4294",
+      "title": "VID-20250810-WA0015.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 23.15,
+      "durationLabel": "0:23",
+      "orientation": "vertical",
+      "sizeMb": 3.39,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04294.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04294_20250810_WhatsApp_VID-20250810-WA0015_a349184de344.mp4",
+      "videoFileName": "04294_20250810_WhatsApp_VID-20250810-WA0015_a349184de344.mp4",
+      "remoteKey": "certificacion-2025/04294_20250810_WhatsApp_VID-20250810-WA0015_a349184de344.mp4",
+      "playbackUrl": "/api/videos/4294",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        },
+        {
+          "slug": "virabhadrasana",
+          "sanskrit": "Virabhadrasana I/II",
+          "spanish": "Guerreros",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "demo",
+        "standing",
+        "transition",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4295",
+      "title": "VID-20250810-WA0016.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 121.88,
+      "durationLabel": "2:02",
+      "orientation": "vertical",
+      "sizeMb": 17.84,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04295.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04295_20250810_WhatsApp_VID-20250810-WA0016_1217745d55a4.mp4",
+      "videoFileName": "04295_20250810_WhatsApp_VID-20250810-WA0016_1217745d55a4.mp4",
+      "remoteKey": "certificacion-2025/04295_20250810_WhatsApp_VID-20250810-WA0016_1217745d55a4.mp4",
+      "playbackUrl": "/api/videos/4295",
+      "poses": [
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        },
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "forward-fold",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4296",
+      "title": "VID-20250810-WA0017.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 31.25,
+      "durationLabel": "0:31",
+      "orientation": "vertical",
+      "sizeMb": 4.57,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04296.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04296_20250810_WhatsApp_VID-20250810-WA0017_9588216a9280.mp4",
+      "videoFileName": "04296_20250810_WhatsApp_VID-20250810-WA0017_9588216a9280.mp4",
+      "remoteKey": "certificacion-2025/04296_20250810_WhatsApp_VID-20250810-WA0017_9588216a9280.mp4",
+      "playbackUrl": "/api/videos/4296",
+      "poses": [
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        },
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "forward-fold",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4297",
+      "title": "VID-20250810-WA0018.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 104.75,
+      "durationLabel": "1:45",
+      "orientation": "vertical",
+      "sizeMb": 15.33,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04297.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04297_20250810_WhatsApp_VID-20250810-WA0018_225e2e32e618.mp4",
+      "videoFileName": "04297_20250810_WhatsApp_VID-20250810-WA0018_225e2e32e618.mp4",
+      "remoteKey": "certificacion-2025/04297_20250810_WhatsApp_VID-20250810-WA0018_225e2e32e618.mp4",
+      "playbackUrl": "/api/videos/4297",
+      "poses": [
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        },
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "forward-fold",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4298",
+      "title": "VID-20250810-WA0019.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 11.4,
+      "durationLabel": "0:11",
+      "orientation": "vertical",
+      "sizeMb": 1.67,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04298.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04298_20250810_WhatsApp_VID-20250810-WA0019_9fdb846951af.mp4",
+      "videoFileName": "04298_20250810_WhatsApp_VID-20250810-WA0019_9fdb846951af.mp4",
+      "remoteKey": "certificacion-2025/04298_20250810_WhatsApp_VID-20250810-WA0019_9fdb846951af.mp4",
+      "playbackUrl": "/api/videos/4298",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        },
+        {
+          "slug": "virabhadrasana",
+          "sanskrit": "Virabhadrasana I/II",
+          "spanish": "Guerreros",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "demo",
+        "short-clip",
+        "standing",
+        "transition",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4299",
+      "title": "VID-20250810-WA0020.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 77.55,
+      "durationLabel": "1:18",
+      "orientation": "vertical",
+      "sizeMb": 12.06,
+      "width": 480,
+      "height": 848,
+      "thumbnail": "/thumbs/04299.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04299_20250810_WhatsApp_VID-20250810-WA0020_db44dbe3e1da.mp4",
+      "videoFileName": "04299_20250810_WhatsApp_VID-20250810-WA0020_db44dbe3e1da.mp4",
+      "remoteKey": "certificacion-2025/04299_20250810_WhatsApp_VID-20250810-WA0020_db44dbe3e1da.mp4",
+      "playbackUrl": "/api/videos/4299",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        },
+        {
+          "slug": "virabhadrasana",
+          "sanskrit": "Virabhadrasana I/II",
+          "spanish": "Guerreros",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "demo",
+        "standing",
+        "transition",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4300",
+      "title": "VID-20250810-WA0021.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 79.64,
+      "durationLabel": "1:20",
+      "orientation": "vertical",
+      "sizeMb": 11.64,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04300.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04300_20250810_WhatsApp_VID-20250810-WA0021_75cb3a966e18.mp4",
+      "videoFileName": "04300_20250810_WhatsApp_VID-20250810-WA0021_75cb3a966e18.mp4",
+      "remoteKey": "certificacion-2025/04300_20250810_WhatsApp_VID-20250810-WA0021_75cb3a966e18.mp4",
+      "playbackUrl": "/api/videos/4300",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        },
+        {
+          "slug": "virabhadrasana",
+          "sanskrit": "Virabhadrasana I/II",
+          "spanish": "Guerreros",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "demo",
+        "standing",
+        "transition",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4301",
+      "title": "VID-20250810-WA0022.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 42.38,
+      "durationLabel": "0:42",
+      "orientation": "vertical",
+      "sizeMb": 6.21,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04301.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04301_20250810_WhatsApp_VID-20250810-WA0022_01ea06b73383.mp4",
+      "videoFileName": "04301_20250810_WhatsApp_VID-20250810-WA0022_01ea06b73383.mp4",
+      "remoteKey": "certificacion-2025/04301_20250810_WhatsApp_VID-20250810-WA0022_01ea06b73383.mp4",
+      "playbackUrl": "/api/videos/4301",
+      "poses": [
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        },
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "forward-fold",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4302",
+      "title": "VID-20250810-WA0023.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 38.82,
+      "durationLabel": "0:39",
+      "orientation": "vertical",
+      "sizeMb": 5.69,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04302.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04302_20250810_WhatsApp_VID-20250810-WA0023_38e90e0cd50d.mp4",
+      "videoFileName": "04302_20250810_WhatsApp_VID-20250810-WA0023_38e90e0cd50d.mp4",
+      "remoteKey": "certificacion-2025/04302_20250810_WhatsApp_VID-20250810-WA0023_38e90e0cd50d.mp4",
+      "playbackUrl": "/api/videos/4302",
+      "poses": [
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        },
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "forward-fold",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4303",
+      "title": "VID-20250810-WA0024.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 37.29,
+      "durationLabel": "0:37",
+      "orientation": "vertical",
+      "sizeMb": 5.46,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04303.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04303_20250810_WhatsApp_VID-20250810-WA0024_d7c1c98e5004.mp4",
+      "videoFileName": "04303_20250810_WhatsApp_VID-20250810-WA0024_d7c1c98e5004.mp4",
+      "remoteKey": "certificacion-2025/04303_20250810_WhatsApp_VID-20250810-WA0024_d7c1c98e5004.mp4",
+      "playbackUrl": "/api/videos/4303",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "core",
+        "group-practice",
+        "hip-opening",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4304",
+      "title": "VID-20250810-WA0025.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 19.23,
+      "durationLabel": "0:19",
+      "orientation": "vertical",
+      "sizeMb": 2.81,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04304.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04304_20250810_WhatsApp_VID-20250810-WA0025_e36d5c7f2e52.mp4",
+      "videoFileName": "04304_20250810_WhatsApp_VID-20250810-WA0025_e36d5c7f2e52.mp4",
+      "remoteKey": "certificacion-2025/04304_20250810_WhatsApp_VID-20250810-WA0025_e36d5c7f2e52.mp4",
+      "playbackUrl": "/api/videos/4304",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "core",
+        "group-practice",
+        "hip-opening",
+        "seated",
+        "short-clip",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4305",
+      "title": "VID-20250810-WA0026.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 23.08,
+      "durationLabel": "0:23",
+      "orientation": "vertical",
+      "sizeMb": 3.39,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04305.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04305_20250810_WhatsApp_VID-20250810-WA0026_943131960911.mp4",
+      "videoFileName": "04305_20250810_WhatsApp_VID-20250810-WA0026_943131960911.mp4",
+      "remoteKey": "certificacion-2025/04305_20250810_WhatsApp_VID-20250810-WA0026_943131960911.mp4",
+      "playbackUrl": "/api/videos/4305",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "core",
+        "group-practice",
+        "hip-opening",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4306",
+      "title": "VID-20250810-WA0027.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 19.23,
+      "durationLabel": "0:19",
+      "orientation": "vertical",
+      "sizeMb": 2.82,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04306.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04306_20250810_WhatsApp_VID-20250810-WA0027_77e1984103f2.mp4",
+      "videoFileName": "04306_20250810_WhatsApp_VID-20250810-WA0027_77e1984103f2.mp4",
+      "remoteKey": "certificacion-2025/04306_20250810_WhatsApp_VID-20250810-WA0027_77e1984103f2.mp4",
+      "playbackUrl": "/api/videos/4306",
+      "poses": [
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        },
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "forward-fold",
+        "seated",
+        "short-clip",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4307",
+      "title": "VID-20250810-WA0028.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 132.63,
+      "durationLabel": "2:13",
+      "orientation": "vertical",
+      "sizeMb": 19.4,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04307.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04307_20250810_WhatsApp_VID-20250810-WA0028_3d1706647a80.mp4",
+      "videoFileName": "04307_20250810_WhatsApp_VID-20250810-WA0028_3d1706647a80.mp4",
+      "remoteKey": "certificacion-2025/04307_20250810_WhatsApp_VID-20250810-WA0028_3d1706647a80.mp4",
+      "playbackUrl": "/api/videos/4307",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        },
+        {
+          "slug": "virabhadrasana",
+          "sanskrit": "Virabhadrasana I/II",
+          "spanish": "Guerreros",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "demo",
+        "standing",
+        "transition",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4308",
+      "title": "VID-20250810-WA0029.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 148.61,
+      "durationLabel": "2:29",
+      "orientation": "vertical",
+      "sizeMb": 21.75,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04308.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04308_20250810_WhatsApp_VID-20250810-WA0029_a1315e029530.mp4",
+      "videoFileName": "04308_20250810_WhatsApp_VID-20250810-WA0029_a1315e029530.mp4",
+      "remoteKey": "certificacion-2025/04308_20250810_WhatsApp_VID-20250810-WA0029_a1315e029530.mp4",
+      "playbackUrl": "/api/videos/4308",
+      "poses": [
+        {
+          "slug": "utthita-hasta-padangusthasana",
+          "sanskrit": "Utthita Hasta Padangusthasana",
+          "spanish": "Pierna extendida tomada",
+          "group": "standing"
+        },
+        {
+          "slug": "virabhadrasana",
+          "sanskrit": "Virabhadrasana I/II",
+          "spanish": "Guerreros",
+          "group": "standing"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "demo",
+        "standing",
+        "transition",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4309",
+      "title": "VID-20250810-WA0030.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 71.73,
+      "durationLabel": "1:12",
+      "orientation": "vertical",
+      "sizeMb": 10.5,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04309.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04309_20250810_WhatsApp_VID-20250810-WA0030_ec97fd4351a4.mp4",
+      "videoFileName": "04309_20250810_WhatsApp_VID-20250810-WA0030_ec97fd4351a4.mp4",
+      "remoteKey": "certificacion-2025/04309_20250810_WhatsApp_VID-20250810-WA0030_ec97fd4351a4.mp4",
+      "playbackUrl": "/api/videos/4309",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "core",
+        "group-practice",
+        "hip-opening",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4310",
+      "title": "VID-20250810-WA0031.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 111.85,
+      "durationLabel": "1:52",
+      "orientation": "vertical",
+      "sizeMb": 16.34,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04310.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04310_20250810_WhatsApp_VID-20250810-WA0031_df2690ef3c20.mp4",
+      "videoFileName": "04310_20250810_WhatsApp_VID-20250810-WA0031_df2690ef3c20.mp4",
+      "remoteKey": "certificacion-2025/04310_20250810_WhatsApp_VID-20250810-WA0031_df2690ef3c20.mp4",
+      "playbackUrl": "/api/videos/4310",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "core",
+        "group-practice",
+        "hip-opening",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4311",
+      "title": "VID-20250810-WA0032.mp4",
+      "date": "2025-08-10",
+      "source": "WhatsApp",
+      "durationSec": 160.24,
+      "durationLabel": "2:40",
+      "orientation": "vertical",
+      "sizeMb": 23.44,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04311.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04311_20250810_WhatsApp_VID-20250810-WA0032_8765fb59e6fd.mp4",
+      "videoFileName": "04311_20250810_WhatsApp_VID-20250810-WA0032_8765fb59e6fd.mp4",
+      "remoteKey": "certificacion-2025/04311_20250810_WhatsApp_VID-20250810-WA0032_8765fb59e6fd.mp4",
+      "playbackUrl": "/api/videos/4311",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "core",
+        "group-practice",
+        "hip-opening",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "88",
+      "title": "20250830_155054.mp4",
+      "date": "2025-08-30",
+      "source": "Camera",
+      "durationSec": 4.63,
+      "durationLabel": "0:05",
+      "orientation": "vertical",
+      "sizeMb": 4.89,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/00088.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\00088_20250830_Camera_20250830_155054_95bf41428763.mp4",
+      "videoFileName": "00088_20250830_Camera_20250830_155054_95bf41428763.mp4",
+      "remoteKey": "certificacion-2025/00088_20250830_Camera_20250830_155054_95bf41428763.mp4",
+      "playbackUrl": "/api/videos/88",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "kurmasana",
+          "sanskrit": "Kurmasana",
+          "spanish": "Tortuga",
+          "group": "seated"
+        },
+        {
+          "slug": "bhuja-pidasana",
+          "sanskrit": "Bhuja Pidasana",
+          "spanish": "Presion en brazos",
+          "group": "arm-balance"
+        }
+      ],
+      "tags": [
+        "arm-balance",
+        "assist",
+        "certificacion-2025",
+        "core",
+        "floor-work",
+        "short-clip",
+        "vertical"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2071",
+      "title": "VID-20250830-WA0069.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp Business",
+      "durationSec": 24.63,
+      "durationLabel": "0:25",
+      "orientation": "vertical",
+      "sizeMb": 3.77,
+      "width": 480,
+      "height": 848,
+      "thumbnail": "/thumbs/02071.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02071_20250830_WhatsApp_Business_VID-20250830-WA0069_ee75f915eca2.mp4",
+      "videoFileName": "02071_20250830_WhatsApp_Business_VID-20250830-WA0069_ee75f915eca2.mp4",
+      "remoteKey": "certificacion-2025/02071_20250830_WhatsApp_Business_VID-20250830-WA0069_ee75f915eca2.mp4",
+      "playbackUrl": "/api/videos/2071",
+      "poses": [
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        },
+        {
+          "slug": "supta-padangusthasana",
+          "sanskrit": "Supta Padangusthasana",
+          "spanish": "Pierna tomada acostado",
+          "group": "finishing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "floor-work",
+        "hip-opening",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2072",
+      "title": "VID-20250830-WA0070.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp Business",
+      "durationSec": 25.37,
+      "durationLabel": "0:25",
+      "orientation": "horizontal",
+      "sizeMb": 3.96,
+      "width": 848,
+      "height": 480,
+      "thumbnail": "/thumbs/02072.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02072_20250830_WhatsApp_Business_VID-20250830-WA0070_24f44f923fa1.mp4",
+      "videoFileName": "02072_20250830_WhatsApp_Business_VID-20250830-WA0070_24f44f923fa1.mp4",
+      "remoteKey": "certificacion-2025/02072_20250830_WhatsApp_Business_VID-20250830-WA0070_24f44f923fa1.mp4",
+      "playbackUrl": "/api/videos/2072",
+      "poses": [
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        },
+        {
+          "slug": "supta-padangusthasana",
+          "sanskrit": "Supta Padangusthasana",
+          "spanish": "Pierna tomada acostado",
+          "group": "finishing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "floor-work",
+        "hip-opening",
+        "horizontal",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2073",
+      "title": "VID-20250830-WA0071.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp Business",
+      "durationSec": 99.38,
+      "durationLabel": "1:39",
+      "orientation": "vertical",
+      "sizeMb": 15.58,
+      "width": 480,
+      "height": 848,
+      "thumbnail": "/thumbs/02073.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02073_20250830_WhatsApp_Business_VID-20250830-WA0071_100de3223712.mp4",
+      "videoFileName": "02073_20250830_WhatsApp_Business_VID-20250830-WA0071_100de3223712.mp4",
+      "remoteKey": "certificacion-2025/02073_20250830_WhatsApp_Business_VID-20250830-WA0071_100de3223712.mp4",
+      "playbackUrl": "/api/videos/2073",
+      "poses": [
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        },
+        {
+          "slug": "supta-padangusthasana",
+          "sanskrit": "Supta Padangusthasana",
+          "spanish": "Pierna tomada acostado",
+          "group": "finishing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "floor-work",
+        "hip-opening",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4327",
+      "title": "VID-20250830-WA0056.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp",
+      "durationSec": 119.89,
+      "durationLabel": "2:00",
+      "orientation": "vertical",
+      "sizeMb": 40.71,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04327.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04327_20250830_WhatsApp_VID-20250830-WA0056_d1864b0dd4aa.mp4",
+      "videoFileName": "04327_20250830_WhatsApp_VID-20250830-WA0056_d1864b0dd4aa.mp4",
+      "remoteKey": "certificacion-2025/04327_20250830_WhatsApp_VID-20250830-WA0056_d1864b0dd4aa.mp4",
+      "playbackUrl": "/api/videos/4327",
+      "poses": [
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        },
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "forward-fold",
+        "group-practice",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4328",
+      "title": "VID-20250830-WA0057.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp",
+      "durationSec": 74.39,
+      "durationLabel": "1:14",
+      "orientation": "vertical",
+      "sizeMb": 25.29,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04328.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04328_20250830_WhatsApp_VID-20250830-WA0057_0f224ec78c26.mp4",
+      "videoFileName": "04328_20250830_WhatsApp_VID-20250830-WA0057_0f224ec78c26.mp4",
+      "remoteKey": "certificacion-2025/04328_20250830_WhatsApp_VID-20250830-WA0057_0f224ec78c26.mp4",
+      "playbackUrl": "/api/videos/4328",
+      "poses": [
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        },
+        {
+          "slug": "supta-padangusthasana",
+          "sanskrit": "Supta Padangusthasana",
+          "spanish": "Pierna tomada acostado",
+          "group": "finishing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "floor-work",
+        "hip-opening",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4329",
+      "title": "VID-20250830-WA0058.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp",
+      "durationSec": 144.46,
+      "durationLabel": "2:24",
+      "orientation": "vertical",
+      "sizeMb": 49.25,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04329.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04329_20250830_WhatsApp_VID-20250830-WA0058_072e821de981.mp4",
+      "videoFileName": "04329_20250830_WhatsApp_VID-20250830-WA0058_072e821de981.mp4",
+      "remoteKey": "certificacion-2025/04329_20250830_WhatsApp_VID-20250830-WA0058_072e821de981.mp4",
+      "playbackUrl": "/api/videos/4329",
+      "poses": [
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        },
+        {
+          "slug": "supta-padangusthasana",
+          "sanskrit": "Supta Padangusthasana",
+          "spanish": "Pierna tomada acostado",
+          "group": "finishing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "floor-work",
+        "hip-opening",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4330",
+      "title": "VID-20250830-WA0059.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp",
+      "durationSec": 83.96,
+      "durationLabel": "1:24",
+      "orientation": "horizontal",
+      "sizeMb": 12.94,
+      "width": 848,
+      "height": 480,
+      "thumbnail": "/thumbs/04330.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04330_20250830_WhatsApp_VID-20250830-WA0059_90e799b0f8d1.mp4",
+      "videoFileName": "04330_20250830_WhatsApp_VID-20250830-WA0059_90e799b0f8d1.mp4",
+      "remoteKey": "certificacion-2025/04330_20250830_WhatsApp_VID-20250830-WA0059_90e799b0f8d1.mp4",
+      "playbackUrl": "/api/videos/4330",
+      "poses": [
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        },
+        {
+          "slug": "supta-padangusthasana",
+          "sanskrit": "Supta Padangusthasana",
+          "spanish": "Pierna tomada acostado",
+          "group": "finishing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "floor-work",
+        "hip-opening",
+        "horizontal",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4331",
+      "title": "VID-20250830-WA0060.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp",
+      "durationSec": 200.83,
+      "durationLabel": "3:21",
+      "orientation": "vertical",
+      "sizeMb": 29.47,
+      "width": 464,
+      "height": 832,
+      "thumbnail": "/thumbs/04331.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04331_20250830_WhatsApp_VID-20250830-WA0060_5b88ebcb4dbe.mp4",
+      "videoFileName": "04331_20250830_WhatsApp_VID-20250830-WA0060_5b88ebcb4dbe.mp4",
+      "remoteKey": "certificacion-2025/04331_20250830_WhatsApp_VID-20250830-WA0060_5b88ebcb4dbe.mp4",
+      "playbackUrl": "/api/videos/4331",
+      "poses": [
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        },
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "forward-fold",
+        "group-practice",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4332",
+      "title": "VID-20250830-WA0061.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp",
+      "durationSec": 12.21,
+      "durationLabel": "0:12",
+      "orientation": "vertical",
+      "sizeMb": 4.15,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04332.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04332_20250830_WhatsApp_VID-20250830-WA0061_66d69abf8752.mp4",
+      "videoFileName": "04332_20250830_WhatsApp_VID-20250830-WA0061_66d69abf8752.mp4",
+      "remoteKey": "certificacion-2025/04332_20250830_WhatsApp_VID-20250830-WA0061_66d69abf8752.mp4",
+      "playbackUrl": "/api/videos/4332",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "kurmasana",
+          "sanskrit": "Kurmasana",
+          "spanish": "Tortuga",
+          "group": "seated"
+        },
+        {
+          "slug": "bhuja-pidasana",
+          "sanskrit": "Bhuja Pidasana",
+          "spanish": "Presion en brazos",
+          "group": "arm-balance"
+        }
+      ],
+      "tags": [
+        "arm-balance",
+        "assist",
+        "certificacion-2025",
+        "core",
+        "floor-work",
+        "short-clip",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4333",
+      "title": "VID-20250830-WA0062.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp",
+      "durationSec": 9.45,
+      "durationLabel": "0:09",
+      "orientation": "vertical",
+      "sizeMb": 3.2,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04333.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04333_20250830_WhatsApp_VID-20250830-WA0062_fbb1b4993d28.mp4",
+      "videoFileName": "04333_20250830_WhatsApp_VID-20250830-WA0062_fbb1b4993d28.mp4",
+      "remoteKey": "certificacion-2025/04333_20250830_WhatsApp_VID-20250830-WA0062_fbb1b4993d28.mp4",
+      "playbackUrl": "/api/videos/4333",
+      "poses": [
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        },
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "forward-fold",
+        "group-practice",
+        "seated",
+        "short-clip",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4334",
+      "title": "VID-20250830-WA0063.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp",
+      "durationSec": 24.29,
+      "durationLabel": "0:24",
+      "orientation": "vertical",
+      "sizeMb": 8.25,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04334.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04334_20250830_WhatsApp_VID-20250830-WA0063_d799c5c84bf6.mp4",
+      "videoFileName": "04334_20250830_WhatsApp_VID-20250830-WA0063_d799c5c84bf6.mp4",
+      "remoteKey": "certificacion-2025/04334_20250830_WhatsApp_VID-20250830-WA0063_d799c5c84bf6.mp4",
+      "playbackUrl": "/api/videos/4334",
+      "poses": [
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        },
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "forward-fold",
+        "group-practice",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4335",
+      "title": "VID-20250830-WA0064.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp",
+      "durationSec": 13.14,
+      "durationLabel": "0:13",
+      "orientation": "vertical",
+      "sizeMb": 4.46,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04335.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04335_20250830_WhatsApp_VID-20250830-WA0064_0a3cb21ddd6f.mp4",
+      "videoFileName": "04335_20250830_WhatsApp_VID-20250830-WA0064_0a3cb21ddd6f.mp4",
+      "remoteKey": "certificacion-2025/04335_20250830_WhatsApp_VID-20250830-WA0064_0a3cb21ddd6f.mp4",
+      "playbackUrl": "/api/videos/4335",
+      "poses": [
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        },
+        {
+          "slug": "supta-padangusthasana",
+          "sanskrit": "Supta Padangusthasana",
+          "spanish": "Pierna tomada acostado",
+          "group": "finishing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "floor-work",
+        "hip-opening",
+        "short-clip",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4336",
+      "title": "VID-20250830-WA0065.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp",
+      "durationSec": 10.52,
+      "durationLabel": "0:11",
+      "orientation": "vertical",
+      "sizeMb": 3.56,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04336.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04336_20250830_WhatsApp_VID-20250830-WA0065_070de3741295.mp4",
+      "videoFileName": "04336_20250830_WhatsApp_VID-20250830-WA0065_070de3741295.mp4",
+      "remoteKey": "certificacion-2025/04336_20250830_WhatsApp_VID-20250830-WA0065_070de3741295.mp4",
+      "playbackUrl": "/api/videos/4336",
+      "poses": [
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        },
+        {
+          "slug": "supta-padangusthasana",
+          "sanskrit": "Supta Padangusthasana",
+          "spanish": "Pierna tomada acostado",
+          "group": "finishing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "floor-work",
+        "hip-opening",
+        "short-clip",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4337",
+      "title": "VID-20250830-WA0066.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp",
+      "durationSec": 22.85,
+      "durationLabel": "0:23",
+      "orientation": "vertical",
+      "sizeMb": 7.74,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04337.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04337_20250830_WhatsApp_VID-20250830-WA0066_d58da366537f.mp4",
+      "videoFileName": "04337_20250830_WhatsApp_VID-20250830-WA0066_d58da366537f.mp4",
+      "remoteKey": "certificacion-2025/04337_20250830_WhatsApp_VID-20250830-WA0066_d58da366537f.mp4",
+      "playbackUrl": "/api/videos/4337",
+      "poses": [
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        },
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "forward-fold",
+        "group-practice",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4338",
+      "title": "VID-20250830-WA0067.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp",
+      "durationSec": 58.96,
+      "durationLabel": "0:59",
+      "orientation": "vertical",
+      "sizeMb": 19.94,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04338.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04338_20250830_WhatsApp_VID-20250830-WA0067_b42ca8e0ddae.mp4",
+      "videoFileName": "04338_20250830_WhatsApp_VID-20250830-WA0067_b42ca8e0ddae.mp4",
+      "remoteKey": "certificacion-2025/04338_20250830_WhatsApp_VID-20250830-WA0067_b42ca8e0ddae.mp4",
+      "playbackUrl": "/api/videos/4338",
+      "poses": [
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        },
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "forward-fold",
+        "group-practice",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4339",
+      "title": "VID-20250830-WA0068.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp",
+      "durationSec": 174.38,
+      "durationLabel": "2:54",
+      "orientation": "vertical",
+      "sizeMb": 58.95,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04339.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04339_20250830_WhatsApp_VID-20250830-WA0068_26b1ac53399d.mp4",
+      "videoFileName": "04339_20250830_WhatsApp_VID-20250830-WA0068_26b1ac53399d.mp4",
+      "remoteKey": "certificacion-2025/04339_20250830_WhatsApp_VID-20250830-WA0068_26b1ac53399d.mp4",
+      "playbackUrl": "/api/videos/4339",
+      "poses": [
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        },
+        {
+          "slug": "supta-padangusthasana",
+          "sanskrit": "Supta Padangusthasana",
+          "spanish": "Pierna tomada acostado",
+          "group": "finishing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "floor-work",
+        "hip-opening",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4340",
+      "title": "VID-20250830-WA0072.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp",
+      "durationSec": 101.45,
+      "durationLabel": "1:41",
+      "orientation": "vertical",
+      "sizeMb": 34.31,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04340.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04340_20250830_WhatsApp_VID-20250830-WA0072_425b7c17d220.mp4",
+      "videoFileName": "04340_20250830_WhatsApp_VID-20250830-WA0072_425b7c17d220.mp4",
+      "remoteKey": "certificacion-2025/04340_20250830_WhatsApp_VID-20250830-WA0072_425b7c17d220.mp4",
+      "playbackUrl": "/api/videos/4340",
+      "poses": [
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        },
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "forward-fold",
+        "group-practice",
+        "seated",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4341",
+      "title": "VID-20250830-WA0073.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp",
+      "durationSec": 25.37,
+      "durationLabel": "0:25",
+      "orientation": "horizontal",
+      "sizeMb": 8.95,
+      "width": 1280,
+      "height": 720,
+      "thumbnail": "/thumbs/04341.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04341_20250830_WhatsApp_VID-20250830-WA0073_e80fff42ebbb.mp4",
+      "videoFileName": "04341_20250830_WhatsApp_VID-20250830-WA0073_e80fff42ebbb.mp4",
+      "remoteKey": "certificacion-2025/04341_20250830_WhatsApp_VID-20250830-WA0073_e80fff42ebbb.mp4",
+      "playbackUrl": "/api/videos/4341",
+      "poses": [
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        },
+        {
+          "slug": "supta-padangusthasana",
+          "sanskrit": "Supta Padangusthasana",
+          "spanish": "Pierna tomada acostado",
+          "group": "finishing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "floor-work",
+        "hip-opening",
+        "horizontal",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4342",
+      "title": "VID-20250830-WA0074.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp",
+      "durationSec": 24.63,
+      "durationLabel": "0:25",
+      "orientation": "vertical",
+      "sizeMb": 8.43,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04342.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04342_20250830_WhatsApp_VID-20250830-WA0074_eb478d1ababa.mp4",
+      "videoFileName": "04342_20250830_WhatsApp_VID-20250830-WA0074_eb478d1ababa.mp4",
+      "remoteKey": "certificacion-2025/04342_20250830_WhatsApp_VID-20250830-WA0074_eb478d1ababa.mp4",
+      "playbackUrl": "/api/videos/4342",
+      "poses": [
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        },
+        {
+          "slug": "supta-padangusthasana",
+          "sanskrit": "Supta Padangusthasana",
+          "spanish": "Pierna tomada acostado",
+          "group": "finishing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "floor-work",
+        "hip-opening",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4343",
+      "title": "VID-20250830-WA0075.mp4",
+      "date": "2025-08-30",
+      "source": "WhatsApp",
+      "durationSec": 99.38,
+      "durationLabel": "1:39",
+      "orientation": "vertical",
+      "sizeMb": 34.58,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04343.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04343_20250830_WhatsApp_VID-20250830-WA0075_1a56b426123e.mp4",
+      "videoFileName": "04343_20250830_WhatsApp_VID-20250830-WA0075_1a56b426123e.mp4",
+      "remoteKey": "certificacion-2025/04343_20250830_WhatsApp_VID-20250830-WA0075_1a56b426123e.mp4",
+      "playbackUrl": "/api/videos/4343",
+      "poses": [
+        {
+          "slug": "baddha-konasana",
+          "sanskrit": "Baddha Konasana",
+          "spanish": "Angulo cerrado",
+          "group": "seated"
+        },
+        {
+          "slug": "upavistha-konasana",
+          "sanskrit": "Upavistha Konasana",
+          "spanish": "Angulo abierto",
+          "group": "seated"
+        },
+        {
+          "slug": "supta-padangusthasana",
+          "sanskrit": "Supta Padangusthasana",
+          "spanish": "Pierna tomada acostado",
+          "group": "finishing"
+        }
+      ],
+      "tags": [
+        "assist",
+        "certificacion-2025",
+        "floor-work",
+        "hip-opening",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "89",
+      "title": "20250831_144358.mp4",
+      "date": "2025-08-31",
+      "source": "Camera",
+      "durationSec": 7.68,
+      "durationLabel": "0:08",
+      "orientation": "vertical",
+      "sizeMb": 8.47,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/00089.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\00089_20250831_Camera_20250831_144358_4c9cd349b67d.mp4",
+      "videoFileName": "00089_20250831_Camera_20250831_144358_4c9cd349b67d.mp4",
+      "remoteKey": "certificacion-2025/00089_20250831_Camera_20250831_144358_4c9cd349b67d.mp4",
+      "playbackUrl": "/api/videos/89",
+      "poses": [
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        },
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "forward-fold",
+        "group-practice",
+        "seated",
+        "short-clip",
+        "vertical"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2325",
+      "title": "VID-20250831-WA0092.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp Business",
+      "durationSec": 20.86,
+      "durationLabel": "0:21",
+      "orientation": "vertical",
+      "sizeMb": 3.83,
+      "width": 478,
+      "height": 850,
+      "thumbnail": "/thumbs/02325.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02325_20250831_WhatsApp_Business_VID-20250831-WA0092_4be1ecdb6fa0.mp4",
+      "videoFileName": "02325_20250831_WhatsApp_Business_VID-20250831-WA0092_4be1ecdb6fa0.mp4",
+      "remoteKey": "certificacion-2025/02325_20250831_WhatsApp_Business_VID-20250831-WA0092_4be1ecdb6fa0.mp4",
+      "playbackUrl": "/api/videos/2325",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "kurmasana",
+          "sanskrit": "Kurmasana",
+          "spanish": "Tortuga",
+          "group": "seated"
+        },
+        {
+          "slug": "bhuja-pidasana",
+          "sanskrit": "Bhuja Pidasana",
+          "spanish": "Presion en brazos",
+          "group": "arm-balance"
+        }
+      ],
+      "tags": [
+        "arm-balance",
+        "assist",
+        "certificacion-2025",
+        "core",
+        "floor-work",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2326",
+      "title": "VID-20250831-WA0093.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp Business",
+      "durationSec": 7.68,
+      "durationLabel": "0:08",
+      "orientation": "vertical",
+      "sizeMb": 1.38,
+      "width": 478,
+      "height": 850,
+      "thumbnail": "/thumbs/02326.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02326_20250831_WhatsApp_Business_VID-20250831-WA0093_af9a790c7a45.mp4",
+      "videoFileName": "02326_20250831_WhatsApp_Business_VID-20250831-WA0093_af9a790c7a45.mp4",
+      "remoteKey": "certificacion-2025/02326_20250831_WhatsApp_Business_VID-20250831-WA0093_af9a790c7a45.mp4",
+      "playbackUrl": "/api/videos/2326",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "kurmasana",
+          "sanskrit": "Kurmasana",
+          "spanish": "Tortuga",
+          "group": "seated"
+        },
+        {
+          "slug": "bhuja-pidasana",
+          "sanskrit": "Bhuja Pidasana",
+          "spanish": "Presion en brazos",
+          "group": "arm-balance"
+        }
+      ],
+      "tags": [
+        "arm-balance",
+        "assist",
+        "certificacion-2025",
+        "core",
+        "floor-work",
+        "short-clip",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2327",
+      "title": "VID-20250831-WA0094.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp Business",
+      "durationSec": 105.73,
+      "durationLabel": "1:46",
+      "orientation": "vertical",
+      "sizeMb": 19.31,
+      "width": 478,
+      "height": 850,
+      "thumbnail": "/thumbs/02327.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02327_20250831_WhatsApp_Business_VID-20250831-WA0094_73b109c9e773.mp4",
+      "videoFileName": "02327_20250831_WhatsApp_Business_VID-20250831-WA0094_73b109c9e773.mp4",
+      "remoteKey": "certificacion-2025/02327_20250831_WhatsApp_Business_VID-20250831-WA0094_73b109c9e773.mp4",
+      "playbackUrl": "/api/videos/2327",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "kurmasana",
+          "sanskrit": "Kurmasana",
+          "spanish": "Tortuga",
+          "group": "seated"
+        },
+        {
+          "slug": "bhuja-pidasana",
+          "sanskrit": "Bhuja Pidasana",
+          "spanish": "Presion en brazos",
+          "group": "arm-balance"
+        }
+      ],
+      "tags": [
+        "arm-balance",
+        "assist",
+        "certificacion-2025",
+        "core",
+        "floor-work",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2328",
+      "title": "VID-20250831-WA0095.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp Business",
+      "durationSec": 7.68,
+      "durationLabel": "0:08",
+      "orientation": "vertical",
+      "sizeMb": 2.53,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02328.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02328_20250831_WhatsApp_Business_VID-20250831-WA0095_d33d73a0496e.mp4",
+      "videoFileName": "02328_20250831_WhatsApp_Business_VID-20250831-WA0095_d33d73a0496e.mp4",
+      "remoteKey": "certificacion-2025/02328_20250831_WhatsApp_Business_VID-20250831-WA0095_d33d73a0496e.mp4",
+      "playbackUrl": "/api/videos/2328",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "kurmasana",
+          "sanskrit": "Kurmasana",
+          "spanish": "Tortuga",
+          "group": "seated"
+        },
+        {
+          "slug": "bhuja-pidasana",
+          "sanskrit": "Bhuja Pidasana",
+          "spanish": "Presion en brazos",
+          "group": "arm-balance"
+        }
+      ],
+      "tags": [
+        "arm-balance",
+        "assist",
+        "certificacion-2025",
+        "core",
+        "floor-work",
+        "short-clip",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2329",
+      "title": "VID-20250831-WA0096.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp Business",
+      "durationSec": 20.86,
+      "durationLabel": "0:21",
+      "orientation": "vertical",
+      "sizeMb": 7.01,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02329.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02329_20250831_WhatsApp_Business_VID-20250831-WA0096_042246296f54.mp4",
+      "videoFileName": "02329_20250831_WhatsApp_Business_VID-20250831-WA0096_042246296f54.mp4",
+      "remoteKey": "certificacion-2025/02329_20250831_WhatsApp_Business_VID-20250831-WA0096_042246296f54.mp4",
+      "playbackUrl": "/api/videos/2329",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "kurmasana",
+          "sanskrit": "Kurmasana",
+          "spanish": "Tortuga",
+          "group": "seated"
+        },
+        {
+          "slug": "bhuja-pidasana",
+          "sanskrit": "Bhuja Pidasana",
+          "spanish": "Presion en brazos",
+          "group": "arm-balance"
+        }
+      ],
+      "tags": [
+        "arm-balance",
+        "assist",
+        "certificacion-2025",
+        "core",
+        "floor-work",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "2330",
+      "title": "VID-20250831-WA0097.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp Business",
+      "durationSec": 105.73,
+      "durationLabel": "1:46",
+      "orientation": "vertical",
+      "sizeMb": 35.38,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/02330.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\02330_20250831_WhatsApp_Business_VID-20250831-WA0097_3e697a2aaa46.mp4",
+      "videoFileName": "02330_20250831_WhatsApp_Business_VID-20250831-WA0097_3e697a2aaa46.mp4",
+      "remoteKey": "certificacion-2025/02330_20250831_WhatsApp_Business_VID-20250831-WA0097_3e697a2aaa46.mp4",
+      "playbackUrl": "/api/videos/2330",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "kurmasana",
+          "sanskrit": "Kurmasana",
+          "spanish": "Tortuga",
+          "group": "seated"
+        },
+        {
+          "slug": "bhuja-pidasana",
+          "sanskrit": "Bhuja Pidasana",
+          "spanish": "Presion en brazos",
+          "group": "arm-balance"
+        }
+      ],
+      "tags": [
+        "arm-balance",
+        "assist",
+        "certificacion-2025",
+        "core",
+        "floor-work",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4344",
+      "title": "VID-20250831-WA0076.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp",
+      "durationSec": 0.93,
+      "durationLabel": "0:01",
+      "orientation": "vertical",
+      "sizeMb": 0.14,
+      "width": 480,
+      "height": 848,
+      "thumbnail": "/thumbs/04344.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04344_20250831_WhatsApp_VID-20250831-WA0076_6e63b5856436.mp4",
+      "videoFileName": "04344_20250831_WhatsApp_VID-20250831-WA0076_6e63b5856436.mp4",
+      "remoteKey": "certificacion-2025/04344_20250831_WhatsApp_VID-20250831-WA0076_6e63b5856436.mp4",
+      "playbackUrl": "/api/videos/4344",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "kurmasana",
+          "sanskrit": "Kurmasana",
+          "spanish": "Tortuga",
+          "group": "seated"
+        },
+        {
+          "slug": "bhuja-pidasana",
+          "sanskrit": "Bhuja Pidasana",
+          "spanish": "Presion en brazos",
+          "group": "arm-balance"
+        }
+      ],
+      "tags": [
+        "arm-balance",
+        "assist",
+        "certificacion-2025",
+        "core",
+        "floor-work",
+        "short-clip",
+        "vertical",
+        "whatsapp-batch"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4345",
+      "title": "VID-20250831-WA0115.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp",
+      "durationSec": 18.46,
+      "durationLabel": "0:18",
+      "orientation": "vertical",
+      "sizeMb": 2.85,
+      "width": 480,
+      "height": 848,
+      "thumbnail": "/thumbs/04345.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04345_20250831_WhatsApp_VID-20250831-WA0115_9c94dc8b42d0.mp4",
+      "videoFileName": "04345_20250831_WhatsApp_VID-20250831-WA0115_9c94dc8b42d0.mp4",
+      "remoteKey": "certificacion-2025/04345_20250831_WhatsApp_VID-20250831-WA0115_9c94dc8b42d0.mp4",
+      "playbackUrl": "/api/videos/4345",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "kurmasana",
+          "sanskrit": "Kurmasana",
+          "spanish": "Tortuga",
+          "group": "seated"
+        },
+        {
+          "slug": "bhuja-pidasana",
+          "sanskrit": "Bhuja Pidasana",
+          "spanish": "Presion en brazos",
+          "group": "arm-balance"
+        }
+      ],
+      "tags": [
+        "arm-balance",
+        "assist",
+        "certificacion-2025",
+        "core",
+        "floor-work",
+        "short-clip",
+        "vertical"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4346",
+      "title": "VID-20250831-WA0116.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp",
+      "durationSec": 13.79,
+      "durationLabel": "0:14",
+      "orientation": "vertical",
+      "sizeMb": 2.13,
+      "width": 480,
+      "height": 848,
+      "thumbnail": "/thumbs/04346.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04346_20250831_WhatsApp_VID-20250831-WA0116_c3a464c8d2d6.mp4",
+      "videoFileName": "04346_20250831_WhatsApp_VID-20250831-WA0116_c3a464c8d2d6.mp4",
+      "remoteKey": "certificacion-2025/04346_20250831_WhatsApp_VID-20250831-WA0116_c3a464c8d2d6.mp4",
+      "playbackUrl": "/api/videos/4346",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "kurmasana",
+          "sanskrit": "Kurmasana",
+          "spanish": "Tortuga",
+          "group": "seated"
+        },
+        {
+          "slug": "bhuja-pidasana",
+          "sanskrit": "Bhuja Pidasana",
+          "spanish": "Presion en brazos",
+          "group": "arm-balance"
+        }
+      ],
+      "tags": [
+        "arm-balance",
+        "assist",
+        "certificacion-2025",
+        "core",
+        "floor-work",
+        "short-clip",
+        "vertical"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4347",
+      "title": "VID-20250831-WA0117.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp",
+      "durationSec": 74.58,
+      "durationLabel": "1:15",
+      "orientation": "vertical",
+      "sizeMb": 11.48,
+      "width": 480,
+      "height": 848,
+      "thumbnail": "/thumbs/04347.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04347_20250831_WhatsApp_VID-20250831-WA0117_6c5ac8a6e02c.mp4",
+      "videoFileName": "04347_20250831_WhatsApp_VID-20250831-WA0117_6c5ac8a6e02c.mp4",
+      "remoteKey": "certificacion-2025/04347_20250831_WhatsApp_VID-20250831-WA0117_6c5ac8a6e02c.mp4",
+      "playbackUrl": "/api/videos/4347",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "kurmasana",
+          "sanskrit": "Kurmasana",
+          "spanish": "Tortuga",
+          "group": "seated"
+        },
+        {
+          "slug": "bhuja-pidasana",
+          "sanskrit": "Bhuja Pidasana",
+          "spanish": "Presion en brazos",
+          "group": "arm-balance"
+        }
+      ],
+      "tags": [
+        "arm-balance",
+        "assist",
+        "certificacion-2025",
+        "core",
+        "floor-work",
+        "vertical"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4348",
+      "title": "VID-20250831-WA0118.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp",
+      "durationSec": 56.1,
+      "durationLabel": "0:56",
+      "orientation": "vertical",
+      "sizeMb": 8.64,
+      "width": 480,
+      "height": 848,
+      "thumbnail": "/thumbs/04348.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04348_20250831_WhatsApp_VID-20250831-WA0118_31120a89bfd9.mp4",
+      "videoFileName": "04348_20250831_WhatsApp_VID-20250831-WA0118_31120a89bfd9.mp4",
+      "remoteKey": "certificacion-2025/04348_20250831_WhatsApp_VID-20250831-WA0118_31120a89bfd9.mp4",
+      "playbackUrl": "/api/videos/4348",
+      "poses": [
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        },
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "forward-fold",
+        "group-practice",
+        "seated",
+        "vertical"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4349",
+      "title": "VID-20250831-WA0119.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp",
+      "durationSec": 108.33,
+      "durationLabel": "1:48",
+      "orientation": "vertical",
+      "sizeMb": 16.79,
+      "width": 480,
+      "height": 848,
+      "thumbnail": "/thumbs/04349.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04349_20250831_WhatsApp_VID-20250831-WA0119_232aba315da7.mp4",
+      "videoFileName": "04349_20250831_WhatsApp_VID-20250831-WA0119_232aba315da7.mp4",
+      "remoteKey": "certificacion-2025/04349_20250831_WhatsApp_VID-20250831-WA0119_232aba315da7.mp4",
+      "playbackUrl": "/api/videos/4349",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "kurmasana",
+          "sanskrit": "Kurmasana",
+          "spanish": "Tortuga",
+          "group": "seated"
+        },
+        {
+          "slug": "bhuja-pidasana",
+          "sanskrit": "Bhuja Pidasana",
+          "spanish": "Presion en brazos",
+          "group": "arm-balance"
+        }
+      ],
+      "tags": [
+        "arm-balance",
+        "assist",
+        "certificacion-2025",
+        "core",
+        "floor-work",
+        "vertical"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4350",
+      "title": "VID-20250831-WA0120.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp",
+      "durationSec": 7.38,
+      "durationLabel": "0:07",
+      "orientation": "vertical",
+      "sizeMb": 2.52,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04350.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04350_20250831_WhatsApp_VID-20250831-WA0120_1e3f78a1a313.mp4",
+      "videoFileName": "04350_20250831_WhatsApp_VID-20250831-WA0120_1e3f78a1a313.mp4",
+      "remoteKey": "certificacion-2025/04350_20250831_WhatsApp_VID-20250831-WA0120_1e3f78a1a313.mp4",
+      "playbackUrl": "/api/videos/4350",
+      "poses": [
+        {
+          "slug": "navasana",
+          "sanskrit": "Navasana",
+          "spanish": "Barco",
+          "group": "seated"
+        },
+        {
+          "slug": "kurmasana",
+          "sanskrit": "Kurmasana",
+          "spanish": "Tortuga",
+          "group": "seated"
+        },
+        {
+          "slug": "bhuja-pidasana",
+          "sanskrit": "Bhuja Pidasana",
+          "spanish": "Presion en brazos",
+          "group": "arm-balance"
+        }
+      ],
+      "tags": [
+        "arm-balance",
+        "assist",
+        "certificacion-2025",
+        "core",
+        "floor-work",
+        "short-clip",
+        "vertical"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4351",
+      "title": "VID-20250831-WA0121.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp",
+      "durationSec": 23.55,
+      "durationLabel": "0:24",
+      "orientation": "vertical",
+      "sizeMb": 7.96,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04351.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04351_20250831_WhatsApp_VID-20250831-WA0121_f91cf21b0f02.mp4",
+      "videoFileName": "04351_20250831_WhatsApp_VID-20250831-WA0121_f91cf21b0f02.mp4",
+      "remoteKey": "certificacion-2025/04351_20250831_WhatsApp_VID-20250831-WA0121_f91cf21b0f02.mp4",
+      "playbackUrl": "/api/videos/4351",
+      "poses": [
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        },
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "forward-fold",
+        "group-practice",
+        "seated",
+        "vertical"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4352",
+      "title": "VID-20250831-WA0122.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp",
+      "durationSec": 29.09,
+      "durationLabel": "0:29",
+      "orientation": "vertical",
+      "sizeMb": 9.85,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04352.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04352_20250831_WhatsApp_VID-20250831-WA0122_41a2bc82193a.mp4",
+      "videoFileName": "04352_20250831_WhatsApp_VID-20250831-WA0122_41a2bc82193a.mp4",
+      "remoteKey": "certificacion-2025/04352_20250831_WhatsApp_VID-20250831-WA0122_41a2bc82193a.mp4",
+      "playbackUrl": "/api/videos/4352",
+      "poses": [
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        },
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "forward-fold",
+        "group-practice",
+        "seated",
+        "vertical"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4353",
+      "title": "VID-20250831-WA0123.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp",
+      "durationSec": 40.59,
+      "durationLabel": "0:41",
+      "orientation": "vertical",
+      "sizeMb": 13.72,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04353.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04353_20250831_WhatsApp_VID-20250831-WA0123_e4e3ff8e893a.mp4",
+      "videoFileName": "04353_20250831_WhatsApp_VID-20250831-WA0123_e4e3ff8e893a.mp4",
+      "remoteKey": "certificacion-2025/04353_20250831_WhatsApp_VID-20250831-WA0123_e4e3ff8e893a.mp4",
+      "playbackUrl": "/api/videos/4353",
+      "poses": [
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        },
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "forward-fold",
+        "group-practice",
+        "seated",
+        "vertical"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4354",
+      "title": "VID-20250831-WA0124.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp",
+      "durationSec": 29.28,
+      "durationLabel": "0:29",
+      "orientation": "vertical",
+      "sizeMb": 9.9,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04354.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04354_20250831_WhatsApp_VID-20250831-WA0124_79e9808861a6.mp4",
+      "videoFileName": "04354_20250831_WhatsApp_VID-20250831-WA0124_79e9808861a6.mp4",
+      "remoteKey": "certificacion-2025/04354_20250831_WhatsApp_VID-20250831-WA0124_79e9808861a6.mp4",
+      "playbackUrl": "/api/videos/4354",
+      "poses": [
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        },
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "forward-fold",
+        "group-practice",
+        "seated",
+        "vertical"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    },
+    {
+      "id": "4356",
+      "title": "VID-20250831-WA0126.mp4",
+      "date": "2025-08-31",
+      "source": "WhatsApp",
+      "durationSec": 54.27,
+      "durationLabel": "0:54",
+      "orientation": "vertical",
+      "sizeMb": 18.36,
+      "width": 720,
+      "height": 1280,
+      "thumbnail": "/thumbs/04356.jpg",
+      "localVideoPath": "D:\\_content_library\\all_videos_flat\\04356_20250831_WhatsApp_VID-20250831-WA0126_f7f0bd657663.mp4",
+      "videoFileName": "04356_20250831_WhatsApp_VID-20250831-WA0126_f7f0bd657663.mp4",
+      "remoteKey": "certificacion-2025/04356_20250831_WhatsApp_VID-20250831-WA0126_f7f0bd657663.mp4",
+      "playbackUrl": "/api/videos/4356",
+      "poses": [
+        {
+          "slug": "paschimottanasana",
+          "sanskrit": "Paschimottanasana",
+          "spanish": "Pinza sentada",
+          "group": "seated"
+        },
+        {
+          "slug": "janu-sirsasana",
+          "sanskrit": "Janu Sirsasana A/B/C",
+          "spanish": "Cabeza a rodilla",
+          "group": "seated"
+        },
+        {
+          "slug": "marichyasana",
+          "sanskrit": "Marichyasana A/B/C/D",
+          "spanish": "Posturas de Marichi",
+          "group": "seated"
+        }
+      ],
+      "tags": [
+        "certificacion-2025",
+        "forward-fold",
+        "group-practice",
+        "seated",
+        "vertical"
+      ],
+      "tagConfidence": "medium",
+      "notes": "Etiquetado inicial visual; revisar y ajustar si el frame contiene transicion o asistencia."
+    }
+  ]
+}

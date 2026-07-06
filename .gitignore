@@ -1,0 +1,9 @@
+.next
+node_modules
+out
+.env*.local
+*.tsbuildinfo
+certification-video-upload-manifest.json
+/dev-*.log
+/*.png
+.vercel
