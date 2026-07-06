@@ -13,7 +13,19 @@ export async function middleware(request: NextRequest) {
   if (!code) return NextResponse.next();
 
   const cookie = request.cookies.get("acceso")?.value;
-  if (cookie && cookie === (await accessHash(code))) return NextResponse.next();
+  if (cookie && cookie === (await accessHash(code))) {
+    // Sesión deslizante: cada visita renueva la cookie al máximo que permite
+    // el navegador (400 días), así el acceso no caduca mientras la app se use.
+    const response = NextResponse.next();
+    response.cookies.set("acceso", cookie, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "lax",
+      maxAge: 60 * 60 * 24 * 400,
+      path: "/",
+    });
+    return response;
+  }
 
   const url = request.nextUrl.clone();
   url.pathname = "/acceso";

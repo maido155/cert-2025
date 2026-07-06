@@ -1,4 +1,4 @@
-import json
+﻿import json
 import shutil
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -22,29 +22,41 @@ PRIMARY_SERIES = [
     {"slug": "parivrtta-trikonasana", "sanskrit": "Parivrtta Trikonasana", "spanish": "Triangulo girado", "group": "standing"},
     {"slug": "utthita-parsvakonasana", "sanskrit": "Utthita Parsvakonasana", "spanish": "Angulo lateral extendido", "group": "standing"},
     {"slug": "parivrtta-parsvakonasana", "sanskrit": "Parivrtta Parsvakonasana", "spanish": "Angulo lateral girado", "group": "standing"},
-    {"slug": "prasarita-padottanasana", "sanskrit": "Prasarita Padottanasana", "spanish": "Flexion amplia de pie", "group": "standing"},
+    {"slug": "prasarita-padottanasana-a", "sanskrit": "Prasarita Padottanasana A", "spanish": "Flexion amplia de pie A", "group": "standing"},
+    {"slug": "prasarita-padottanasana-b", "sanskrit": "Prasarita Padottanasana B", "spanish": "Flexion amplia de pie B", "group": "standing"},
+    {"slug": "prasarita-padottanasana-c", "sanskrit": "Prasarita Padottanasana C", "spanish": "Flexion amplia de pie C", "group": "standing"},
+    {"slug": "prasarita-padottanasana-d", "sanskrit": "Prasarita Padottanasana D", "spanish": "Flexion amplia de pie D", "group": "standing"},
     {"slug": "parsvottanasana", "sanskrit": "Parsvottanasana", "spanish": "Estiramiento lateral intenso", "group": "standing"},
     {"slug": "utthita-hasta-padangusthasana", "sanskrit": "Utthita Hasta Padangusthasana", "spanish": "Pierna extendida tomada", "group": "standing"},
     {"slug": "ardha-baddha-padmottanasana", "sanskrit": "Ardha Baddha Padmottanasana", "spanish": "Medio loto de pie", "group": "standing"},
     {"slug": "utkatasana", "sanskrit": "Utkatasana", "spanish": "Silla", "group": "standing"},
-    {"slug": "virabhadrasana", "sanskrit": "Virabhadrasana I/II", "spanish": "Guerreros", "group": "standing"},
+    {"slug": "virabhadrasana-a", "sanskrit": "Virabhadrasana A", "spanish": "Guerrero I", "group": "standing"},
+    {"slug": "virabhadrasana-b", "sanskrit": "Virabhadrasana B", "spanish": "Guerrero II", "group": "standing"},
     {"slug": "dandasana", "sanskrit": "Dandasana", "spanish": "Baston", "group": "seated"},
     {"slug": "paschimottanasana", "sanskrit": "Paschimottanasana", "spanish": "Pinza sentada", "group": "seated"},
     {"slug": "purvottanasana", "sanskrit": "Purvottanasana", "spanish": "Estiramiento anterior", "group": "seated"},
     {"slug": "ardha-baddha-padma-paschimottanasana", "sanskrit": "Ardha Baddha Padma Paschimottanasana", "spanish": "Medio loto sentado", "group": "seated"},
     {"slug": "triang-mukhaikapada-paschimottanasana", "sanskrit": "Triang Mukhaikapada Paschimottanasana", "spanish": "Una pierna doblada", "group": "seated"},
-    {"slug": "janu-sirsasana", "sanskrit": "Janu Sirsasana A/B/C", "spanish": "Cabeza a rodilla", "group": "seated"},
-    {"slug": "marichyasana", "sanskrit": "Marichyasana A/B/C/D", "spanish": "Posturas de Marichi", "group": "seated"},
+    {"slug": "janu-sirsasana-a", "sanskrit": "Janu Sirsasana A", "spanish": "Cabeza a rodilla A", "group": "seated"},
+    {"slug": "janu-sirsasana-b", "sanskrit": "Janu Sirsasana B", "spanish": "Cabeza a rodilla B", "group": "seated"},
+    {"slug": "janu-sirsasana-c", "sanskrit": "Janu Sirsasana C", "spanish": "Cabeza a rodilla C", "group": "seated"},
+    {"slug": "marichyasana-a", "sanskrit": "Marichyasana A", "spanish": "Postura de Marichi A", "group": "seated"},
+    {"slug": "marichyasana-b", "sanskrit": "Marichyasana B", "spanish": "Postura de Marichi B", "group": "seated"},
+    {"slug": "marichyasana-c", "sanskrit": "Marichyasana C", "spanish": "Postura de Marichi C", "group": "seated"},
+    {"slug": "marichyasana-d", "sanskrit": "Marichyasana D", "spanish": "Postura de Marichi D", "group": "seated"},
     {"slug": "navasana", "sanskrit": "Navasana", "spanish": "Barco", "group": "seated"},
     {"slug": "bhuja-pidasana", "sanskrit": "Bhuja Pidasana", "spanish": "Presion en brazos", "group": "arm-balance"},
     {"slug": "kurmasana", "sanskrit": "Kurmasana", "spanish": "Tortuga", "group": "seated"},
     {"slug": "supta-kurmasana", "sanskrit": "Supta Kurmasana", "spanish": "Tortuga reclinada", "group": "seated"},
-    {"slug": "garbha-pindasana", "sanskrit": "Garbha Pindasana", "spanish": "Embrión", "group": "seated"},
+    {"slug": "garbha-pindasana", "sanskrit": "Garbha Pindasana", "spanish": "Embrion", "group": "seated"},
     {"slug": "kukutasana", "sanskrit": "Kukutasana", "spanish": "Gallo", "group": "arm-balance"},
-    {"slug": "baddha-konasana", "sanskrit": "Baddha Konasana", "spanish": "Angulo cerrado", "group": "seated"},
-    {"slug": "upavistha-konasana", "sanskrit": "Upavistha Konasana", "spanish": "Angulo abierto", "group": "seated"},
+    {"slug": "baddha-konasana-a", "sanskrit": "Baddha Konasana A", "spanish": "Angulo cerrado A", "group": "seated"},
+    {"slug": "baddha-konasana-b", "sanskrit": "Baddha Konasana B", "spanish": "Angulo cerrado B", "group": "seated"},
+    {"slug": "upavistha-konasana-a", "sanskrit": "Upavistha Konasana A", "spanish": "Angulo abierto A", "group": "seated"},
+    {"slug": "upavistha-konasana-b", "sanskrit": "Upavistha Konasana B", "spanish": "Angulo abierto B", "group": "seated"},
     {"slug": "supta-konasana", "sanskrit": "Supta Konasana", "spanish": "Angulo reclinado", "group": "finishing"},
     {"slug": "supta-padangusthasana", "sanskrit": "Supta Padangusthasana", "spanish": "Pierna tomada acostado", "group": "finishing"},
+    {"slug": "ubhaya-padangusthasana", "sanskrit": "Ubhaya Padangusthasana", "spanish": "Ambos pulgares de los pies", "group": "finishing"},
     {"slug": "urdhva-mukha-paschimottanasana", "sanskrit": "Urdhva Mukha Paschimottanasana", "spanish": "Pinza hacia arriba", "group": "finishing"},
     {"slug": "setu-bandhasana", "sanskrit": "Setu Bandhasana", "spanish": "Puente", "group": "finishing"},
     {"slug": "urdhva-dhanurasana", "sanskrit": "Urdhva Dhanurasana", "spanish": "Rueda", "group": "backbend"},
@@ -52,7 +64,7 @@ PRIMARY_SERIES = [
     {"slug": "halasana", "sanskrit": "Halasana", "spanish": "Arado", "group": "finishing"},
     {"slug": "karnapidasana", "sanskrit": "Karnapidasana", "spanish": "Presion de orejas", "group": "finishing"},
     {"slug": "urdhva-padmasana", "sanskrit": "Urdhva Padmasana", "spanish": "Loto elevado", "group": "finishing"},
-    {"slug": "pindasana", "sanskrit": "Pindasana", "spanish": "Embrión en loto", "group": "finishing"},
+    {"slug": "pindasana", "sanskrit": "Pindasana", "spanish": "Embrion en loto", "group": "finishing"},
     {"slug": "matsyasana", "sanskrit": "Matsyasana", "spanish": "Pez", "group": "finishing"},
     {"slug": "uttana-padasana", "sanskrit": "Uttana Padasana", "spanish": "Piernas extendidas", "group": "finishing"},
     {"slug": "sirsasana", "sanskrit": "Sirsasana", "spanish": "Parado de cabeza", "group": "finishing"},
@@ -83,29 +95,29 @@ def infer_pose(video):
         confidence = "medium"
     elif date == "2025-06-08":
         if vid in {2268, 2269, 2270, 2271, 2272, 2273, 4160, 4161}:
-            pose_slugs = ["utthita-hasta-padangusthasana", "virabhadrasana"]
+            pose_slugs = ["utthita-hasta-padangusthasana", "virabhadrasana-a"]
             tags.update(["standing", "balance", "teaching", "assist"])
             confidence = "medium"
     elif date in {"2025-06-21", "2025-06-22"}:
         if vid in {4179, 4180, 4181, 4182, 4184, 4185, 4186, 4190, 4191, 4195, 4197, 4198, 2280, 2281}:
-            pose_slugs = ["prasarita-padottanasana", "utthita-parsvakonasana"]
+            pose_slugs = ["prasarita-padottanasana-a", "utthita-parsvakonasana"]
             tags.update(["standing", "wide-leg", "assist", "group-practice"])
         elif vid in {4183, 4187, 4188, 4189, 4192, 4193, 4194, 4196, 2276, 2277, 2278, 2279}:
             pose_slugs = ["padangusthasana", "padahastasana", "utthita-hasta-padangusthasana"]
             tags.update(["standing", "forward-fold", "balance", "demo"])
         else:
-            pose_slugs = ["prasarita-padottanasana"]
+            pose_slugs = ["prasarita-padottanasana-a"]
             tags.update(["standing", "group-practice"])
         confidence = "medium"
     elif date == "2025-08-10":
         if vid in {4303, 4304, 4305, 4309, 4310, 4311}:
-            pose_slugs = ["navasana", "baddha-konasana", "upavistha-konasana"]
+            pose_slugs = ["navasana", "baddha-konasana-a", "upavistha-konasana-a"]
             tags.update(["seated", "core", "hip-opening", "group-practice"])
         elif vid in {4288, 4289, 4290, 4291, 4292, 4295, 4296, 4297, 4301, 4302, 4306}:
-            pose_slugs = ["janu-sirsasana", "marichyasana", "paschimottanasana"]
+            pose_slugs = ["janu-sirsasana-a", "marichyasana-a", "paschimottanasana"]
             tags.update(["seated", "forward-fold", "assist"])
         elif vid in {4294, 4298, 4299, 4300, 4307, 4308}:
-            pose_slugs = ["utthita-hasta-padangusthasana", "virabhadrasana"]
+            pose_slugs = ["utthita-hasta-padangusthasana", "virabhadrasana-a"]
             tags.update(["standing", "demo", "transition"])
         else:
             pose_slugs = ["paschimottanasana"]
@@ -113,10 +125,10 @@ def infer_pose(video):
         confidence = "medium"
     elif date in {"2025-08-30", "2025-08-31"}:
         if vid in {4327, 4331, 4333, 4334, 4337, 4338, 4340, 4348, 4351, 4352, 4353, 4354, 4356, 89}:
-            pose_slugs = ["paschimottanasana", "janu-sirsasana", "marichyasana"]
+            pose_slugs = ["paschimottanasana", "janu-sirsasana-a", "marichyasana-a"]
             tags.update(["seated", "forward-fold", "group-practice"])
         elif vid in {4328, 4329, 4330, 4335, 4336, 4339, 4341, 4342, 4343, 2071, 2072, 2073}:
-            pose_slugs = ["baddha-konasana", "upavistha-konasana", "supta-padangusthasana"]
+            pose_slugs = ["baddha-konasana-a", "upavistha-konasana-a", "supta-padangusthasana"]
             tags.update(["hip-opening", "assist", "floor-work"])
         elif vid in {4332, 4344, 4345, 4346, 4347, 4349, 4350, 2325, 2326, 2327, 2328, 2329, 2330, 88}:
             pose_slugs = ["navasana", "kurmasana", "bhuja-pidasana"]

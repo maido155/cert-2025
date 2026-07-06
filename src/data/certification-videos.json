@@ -55,9 +55,27 @@
       "group": "standing"
     },
     {
-      "slug": "prasarita-padottanasana",
-      "sanskrit": "Prasarita Padottanasana",
-      "spanish": "Flexion amplia de pie",
+      "slug": "prasarita-padottanasana-a",
+      "sanskrit": "Prasarita Padottanasana A",
+      "spanish": "Flexion amplia de pie A",
+      "group": "standing"
+    },
+    {
+      "slug": "prasarita-padottanasana-b",
+      "sanskrit": "Prasarita Padottanasana B",
+      "spanish": "Flexion amplia de pie B",
+      "group": "standing"
+    },
+    {
+      "slug": "prasarita-padottanasana-c",
+      "sanskrit": "Prasarita Padottanasana C",
+      "spanish": "Flexion amplia de pie C",
+      "group": "standing"
+    },
+    {
+      "slug": "prasarita-padottanasana-d",
+      "sanskrit": "Prasarita Padottanasana D",
+      "spanish": "Flexion amplia de pie D",
       "group": "standing"
     },
     {
@@ -85,9 +103,15 @@
       "group": "standing"
     },
     {
-      "slug": "virabhadrasana",
-      "sanskrit": "Virabhadrasana I/II",
-      "spanish": "Guerreros",
+      "slug": "virabhadrasana-a",
+      "sanskrit": "Virabhadrasana A",
+      "spanish": "Guerrero I",
+      "group": "standing"
+    },
+    {
+      "slug": "virabhadrasana-b",
+      "sanskrit": "Virabhadrasana B",
+      "spanish": "Guerrero II",
       "group": "standing"
     },
     {
@@ -121,15 +145,45 @@
       "group": "seated"
     },
     {
-      "slug": "janu-sirsasana",
-      "sanskrit": "Janu Sirsasana A/B/C",
-      "spanish": "Cabeza a rodilla",
+      "slug": "janu-sirsasana-a",
+      "sanskrit": "Janu Sirsasana A",
+      "spanish": "Cabeza a rodilla A",
       "group": "seated"
     },
     {
-      "slug": "marichyasana",
-      "sanskrit": "Marichyasana A/B/C/D",
-      "spanish": "Posturas de Marichi",
+      "slug": "janu-sirsasana-b",
+      "sanskrit": "Janu Sirsasana B",
+      "spanish": "Cabeza a rodilla B",
+      "group": "seated"
+    },
+    {
+      "slug": "janu-sirsasana-c",
+      "sanskrit": "Janu Sirsasana C",
+      "spanish": "Cabeza a rodilla C",
+      "group": "seated"
+    },
+    {
+      "slug": "marichyasana-a",
+      "sanskrit": "Marichyasana A",
+      "spanish": "Postura de Marichi A",
+      "group": "seated"
+    },
+    {
+      "slug": "marichyasana-b",
+      "sanskrit": "Marichyasana B",
+      "spanish": "Postura de Marichi B",
+      "group": "seated"
+    },
+    {
+      "slug": "marichyasana-c",
+      "sanskrit": "Marichyasana C",
+      "spanish": "Postura de Marichi C",
+      "group": "seated"
+    },
+    {
+      "slug": "marichyasana-d",
+      "sanskrit": "Marichyasana D",
+      "spanish": "Postura de Marichi D",
       "group": "seated"
     },
     {
@@ -169,15 +223,27 @@
       "group": "arm-balance"
     },
     {
-      "slug": "baddha-konasana",
-      "sanskrit": "Baddha Konasana",
-      "spanish": "Angulo cerrado",
+      "slug": "baddha-konasana-a",
+      "sanskrit": "Baddha Konasana A",
+      "spanish": "Angulo cerrado A",
       "group": "seated"
     },
     {
-      "slug": "upavistha-konasana",
-      "sanskrit": "Upavistha Konasana",
-      "spanish": "Angulo abierto",
+      "slug": "baddha-konasana-b",
+      "sanskrit": "Baddha Konasana B",
+      "spanish": "Angulo cerrado B",
+      "group": "seated"
+    },
+    {
+      "slug": "upavistha-konasana-a",
+      "sanskrit": "Upavistha Konasana A",
+      "spanish": "Angulo abierto A",
+      "group": "seated"
+    },
+    {
+      "slug": "upavistha-konasana-b",
+      "sanskrit": "Upavistha Konasana B",
+      "spanish": "Angulo abierto B",
       "group": "seated"
     },
     {
@@ -190,6 +256,12 @@
       "slug": "supta-padangusthasana",
       "sanskrit": "Supta Padangusthasana",
       "spanish": "Pierna tomada acostado",
+      "group": "finishing"
+    },
+    {
+      "slug": "ubhaya-padangusthasana",
+      "sanskrit": "Ubhaya Padangusthasana",
+      "spanish": "Ambos pulgares de los pies",
       "group": "finishing"
     },
     {
