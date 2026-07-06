@@ -40,6 +40,9 @@ export default function PlayerOverlay({ video, index, total, onPrev, onNext, onC
     <div className="theaterBackdrop" onMouseDown={(event) => event.currentTarget === event.target && onClose()}>
       <section className="theater" role="dialog" aria-modal="true" aria-label={title}>
         <div className="theaterStage">
+          <button className="theaterClose" onClick={onClose} type="button" aria-label="Cerrar">
+            <X size={20} />
+          </button>
           {playback ? (
             <video key={video.id} src={playback} className={orientation} controls autoPlay playsInline preload="metadata" poster={video.thumbnail} />
           ) : (

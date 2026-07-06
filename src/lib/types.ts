@@ -5,6 +5,8 @@ export type PoseGroup =
   | "arm-balance"
   | "backbend"
   | "finishing"
+  | "transition"
+  | "teaching"
   | "review";
 
 export type Pose = {

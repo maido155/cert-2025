@@ -73,6 +73,18 @@ PRIMARY_SERIES = [
     {"slug": "padmasana", "sanskrit": "Padmasana", "spanish": "Loto", "group": "finishing"},
     {"slug": "utpluthih", "sanskrit": "Utpluthih", "spanish": "Elevacion final", "group": "finishing"},
     {"slug": "savasana", "sanskrit": "Savasana", "spanish": "Descanso", "group": "finishing"},
+    {"slug": "vinyasa", "sanskrit": "Vinyasa", "spanish": "Flujo con respiración", "group": "transition"},
+    {"slug": "jump-back", "sanskrit": "Jump Back", "spanish": "Salto atrás", "group": "transition"},
+    {"slug": "jump-through", "sanskrit": "Jump Through", "spanish": "Salto adentro", "group": "transition"},
+    {"slug": "chakrasana", "sanskrit": "Chakrasana", "spanish": "Voltereta hacia atrás", "group": "transition"},
+    {"slug": "ajustes", "sanskrit": "Ajustes", "spanish": "Ajustes y asistencias", "group": "teaching"},
+    {"slug": "indicaciones", "sanskrit": "Indicaciones", "spanish": "Indicaciones generales", "group": "teaching"},
+    {"slug": "reflexiones", "sanskrit": "Reflexiones", "spanish": "Reflexiones y charla", "group": "teaching"},
+    {"slug": "filosofia", "sanskrit": "Filosofía", "spanish": "Filosofía del yoga", "group": "teaching"},
+    {"slug": "pranayama", "sanskrit": "Pranayama", "spanish": "Respiración", "group": "teaching"},
+    {"slug": "bandhas", "sanskrit": "Bandhas", "spanish": "Cierres energéticos", "group": "teaching"},
+    {"slug": "drishti", "sanskrit": "Drishti", "spanish": "Punto de mirada", "group": "teaching"},
+    {"slug": "mantra", "sanskrit": "Mantra", "spanish": "Canto de apertura y cierre", "group": "teaching"},
 ]
 
 

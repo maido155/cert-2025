@@ -7,6 +7,8 @@ export const groupLabels: Record<string, string> = {
   "arm-balance": "Brazos",
   backbend: "Extensiones",
   finishing: "Cierre",
+  transition: "Transiciones",
+  teaching: "Enseñanza",
   review: "Para revisar",
 };
 
