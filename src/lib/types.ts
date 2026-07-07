@@ -82,6 +82,14 @@ export type HistoryEntry = {
   createdAt: string;
 };
 
+export type Comment = {
+  id: number;
+  videoId: string;
+  author: string;
+  body: string;
+  createdAt: string;
+};
+
 export type AppData = {
   generatedAt: string;
   storageStrategy: {

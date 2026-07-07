@@ -3,6 +3,7 @@
 import { Clock3, RotateCcw, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import type { HistoryEntry } from "@/lib/types";
+import { relativeTime } from "@/lib/format";
 import { lockScroll, unlockScroll } from "@/lib/scroll-lock";
 
 type Props = {
@@ -19,19 +20,6 @@ const actionLabels: Record<string, string> = {
   restore: "restauró",
   revert: "revirtió un cambio de",
 };
-
-function relativeTime(iso: string) {
-  const then = new Date(iso).getTime();
-  const diff = Date.now() - then;
-  const mins = Math.round(diff / 60000);
-  if (mins < 1) return "hace un momento";
-  if (mins < 60) return `hace ${mins} min`;
-  const hours = Math.round(mins / 60);
-  if (hours < 24) return `hace ${hours} h`;
-  const days = Math.round(hours / 24);
-  if (days < 30) return `hace ${days} d`;
-  return new Date(iso).toLocaleDateString("es-MX", { day: "numeric", month: "short" });
-}
 
 export default function HistoryPanel({ onClose, onRevert }: Props) {
   const [entries, setEntries] = useState<HistoryEntry[] | null>(null);

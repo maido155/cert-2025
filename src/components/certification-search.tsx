@@ -1,7 +1,7 @@
 "use client";
 
 import { CloudUpload, Download, FileUp, History, MoreVertical, RotateCcw, Triangle, Upload } from "lucide-react";
-import { ChangeEvent, useEffect, useMemo, useRef, useState } from "react";
+import { ChangeEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { AppData, Draft, EditableVideo, Pose } from "@/lib/types";
 import { autoTitle, cleanTags, matchesText, uniquePoseMap } from "@/lib/format";
 import { useCloudLibrary } from "@/lib/use-library";
@@ -64,6 +64,7 @@ export default function CertificationSearch({ data }: Props) {
   const [showHistory, setShowHistory] = useState(false);
   const [showName, setShowName] = useState(false);
   const [showLocalOffer, setShowLocalOffer] = useState(false);
+  const [commentCounts, setCommentCounts] = useState<Record<string, number>>({});
   const pendingSaveRef = useRef<(() => void) | null>(null);
   const importRef = useRef<HTMLInputElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -71,6 +72,18 @@ export default function CertificationSearch({ data }: Props) {
   useEffect(() => {
     if (cloud) setShowLocalOffer(hasLocalEdits());
   }, [cloud, hasLocalEdits]);
+
+  const refreshCounts = useCallback(() => {
+    if (!cloud) return;
+    fetch("/api/comments/counts", { cache: "no-store" })
+      .then((res) => res.json())
+      .then((data) => setCommentCounts(data.counts ?? {}))
+      .catch(() => {});
+  }, [cloud]);
+
+  useEffect(() => {
+    refreshCounts();
+  }, [refreshCounts]);
 
   // Si la nube está activa y aún no hay firma, pide el nombre antes de guardar.
   function withEditor(run: () => void) {
@@ -377,7 +390,7 @@ export default function CertificationSearch({ data }: Props) {
         <p className="resultsBar">
           {hasFilters ? `${filtered.length} de ${visibleVideos.length} prácticas` : `${visibleVideos.length} prácticas · ${dates.length} encuentros · ${poses.length} posturas`}
         </p>
-        <VideoGrid videos={filtered} groupBySession={sort === "date"} onOpen={setWatchingId} onClear={clearAll} />
+        <VideoGrid videos={filtered} groupBySession={sort === "date"} onOpen={setWatchingId} onClear={clearAll} commentCounts={commentCounts} />
       </section>
 
       {watching ? (
@@ -393,6 +406,10 @@ export default function CertificationSearch({ data }: Props) {
             setPose(slug);
             setWatchingId(null);
           }}
+          cloud={cloud}
+          editorName={editorName}
+          requireEditor={withEditor}
+          onCommentsChanged={refreshCounts}
         />
       ) : null}
 

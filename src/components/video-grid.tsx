@@ -10,9 +10,10 @@ type Props = {
   groupBySession: boolean;
   onOpen: (id: string) => void;
   onClear: () => void;
+  commentCounts?: Record<string, number>;
 };
 
-export default function VideoGrid({ videos, groupBySession, onOpen, onClear }: Props) {
+export default function VideoGrid({ videos, groupBySession, onOpen, onClear, commentCounts }: Props) {
   if (videos.length === 0) {
     return (
       <div className="emptyState">
@@ -29,7 +30,7 @@ export default function VideoGrid({ videos, groupBySession, onOpen, onClear }: P
     return (
       <div className="videoGrid">
         {videos.map((video) => (
-          <VideoCard key={video.id} video={video} onOpen={onOpen} />
+          <VideoCard key={video.id} video={video} onOpen={onOpen} comments={commentCounts?.[video.id] ?? 0} />
         ))}
       </div>
     );
@@ -54,7 +55,7 @@ export default function VideoGrid({ videos, groupBySession, onOpen, onClear }: P
           </div>
           <div className="videoGrid">
             {list.map((video) => (
-              <VideoCard key={video.id} video={video} onOpen={onOpen} />
+              <VideoCard key={video.id} video={video} onOpen={onOpen} comments={commentCounts?.[video.id] ?? 0} />
             ))}
           </div>
         </section>

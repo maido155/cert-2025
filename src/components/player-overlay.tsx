@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import type { EditableVideo } from "@/lib/types";
 import { autoTitle, formatDate, isRawTitle } from "@/lib/format";
 import { lockScroll, unlockScroll } from "@/lib/scroll-lock";
+import CommentsSection from "@/components/comments-section";
 
 type Props = {
   video: EditableVideo;
@@ -15,9 +16,13 @@ type Props = {
   onClose: () => void;
   onEdit: () => void;
   onPickPose: (slug: string) => void;
+  cloud?: boolean;
+  editorName?: string;
+  requireEditor?: (run: () => void) => void;
+  onCommentsChanged?: () => void;
 };
 
-export default function PlayerOverlay({ video, index, total, onPrev, onNext, onClose, onEdit, onPickPose }: Props) {
+export default function PlayerOverlay({ video, index, total, onPrev, onNext, onClose, onEdit, onPickPose, cloud, editorName, requireEditor, onCommentsChanged }: Props) {
   useEffect(() => {
     lockScroll();
     return () => unlockScroll();
@@ -109,6 +114,16 @@ export default function PlayerOverlay({ video, index, total, onPrev, onNext, onC
               {index + 1} de {total}
             </span>
           </div>
+
+          {cloud && requireEditor ? (
+            <CommentsSection
+              key={video.id}
+              videoId={video.id}
+              editorName={editorName ?? ""}
+              requireEditor={requireEditor}
+              onChanged={onCommentsChanged}
+            />
+          ) : null}
         </div>
       </section>
     </div>

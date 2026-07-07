@@ -901,8 +901,159 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 9px;
-  margin-top: auto;
-  padding-top: 8px;
+  padding-top: 4px;
+}
+
+/* ---------- Comentarios ---------- */
+
+.comments {
+  display: grid;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.commentsTitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.commentsTitle span {
+  display: inline-grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 11px;
+}
+
+.commentsEmpty {
+  color: var(--faint);
+  font-size: 13.5px;
+}
+
+.commentsList {
+  display: grid;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.commentHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.commentAuthor {
+  font-weight: 600;
+  font-size: 13.5px;
+  color: var(--accent);
+}
+
+.commentTime {
+  color: var(--faint);
+  font-size: 12px;
+}
+
+.commentDelete {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  border-radius: 6px;
+  color: var(--faint);
+  transition: background 140ms ease, color 140ms ease;
+}
+
+.commentDelete:hover {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.commentBody {
+  margin-top: 3px;
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.commentForm {
+  display: grid;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.commentForm textarea {
+  width: 100%;
+  min-height: 62px;
+  padding: 10px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  background: var(--bg-soft);
+  color: var(--ink);
+  resize: vertical;
+}
+
+.commentForm textarea:focus {
+  outline: 0;
+  border-color: rgba(56, 189, 248, 0.55);
+}
+
+.commentForm textarea::placeholder {
+  color: var(--faint);
+}
+
+.commentForm .primaryButton {
+  justify-self: end;
+}
+
+.commentForm .primaryButton:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.cardTopLeft {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.cardTopLeft .uploadBadge {
+  position: static;
+  top: auto;
+  left: auto;
+}
+
+.commentBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 7px;
+  background: rgba(4, 10, 18, 0.72);
+  backdrop-filter: blur(4px);
+  color: #e4eef7;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .counter {
