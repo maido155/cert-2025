@@ -4,6 +4,7 @@ import { Check, EyeOff, Save, Trash2, Upload, X } from "lucide-react";
 import { useEffect } from "react";
 import type { Draft, Pose } from "@/lib/types";
 import { groupLabels } from "@/lib/format";
+import { lockScroll, unlockScroll } from "@/lib/scroll-lock";
 
 type Props = {
   mode: "edit" | "new";
@@ -21,16 +22,16 @@ type Props = {
 
 export default function PracticeModal({ mode, draft, onDraft, allPoses, newFile, onFile, titlePlaceholder, onSave, onHide, onDelete, onClose }: Props) {
   useEffect(() => {
+    lockScroll();
+    return () => unlockScroll();
+  }, []);
+
+  useEffect(() => {
     function handleKey(event: KeyboardEvent) {
       if (event.key === "Escape") onClose();
     }
     window.addEventListener("keydown", handleKey);
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      window.removeEventListener("keydown", handleKey);
-      document.body.style.overflow = previousOverflow;
-    };
+    return () => window.removeEventListener("keydown", handleKey);
   }, [onClose]);
 
   function togglePose(slug: string) {

@@ -2,6 +2,7 @@
 
 import { UserRound } from "lucide-react";
 import { useEffect, useState } from "react";
+import { lockScroll, unlockScroll } from "@/lib/scroll-lock";
 
 type Props = {
   initial?: string;
@@ -11,6 +12,11 @@ type Props = {
 
 export default function EditorNameModal({ initial = "", onSave, onClose }: Props) {
   const [name, setName] = useState(initial);
+
+  useEffect(() => {
+    lockScroll();
+    return () => unlockScroll();
+  }, []);
 
   useEffect(() => {
     function handleKey(event: KeyboardEvent) {

@@ -3,6 +3,7 @@
 import { Clock3, RotateCcw, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import type { HistoryEntry } from "@/lib/types";
+import { lockScroll, unlockScroll } from "@/lib/scroll-lock";
 
 type Props = {
   onClose: () => void;
@@ -45,6 +46,11 @@ export default function HistoryPanel({ onClose, onRevert }: Props) {
       setEntries([]);
     }
   }
+
+  useEffect(() => {
+    lockScroll();
+    return () => unlockScroll();
+  }, []);
 
   useEffect(() => {
     load();

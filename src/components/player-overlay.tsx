@@ -4,6 +4,7 @@ import { CalendarDays, ChevronLeft, ChevronRight, CirclePlay, Clock3, Pencil, Us
 import { useEffect } from "react";
 import type { EditableVideo } from "@/lib/types";
 import { autoTitle, formatDate, isRawTitle } from "@/lib/format";
+import { lockScroll, unlockScroll } from "@/lib/scroll-lock";
 
 type Props = {
   video: EditableVideo;
@@ -18,18 +19,18 @@ type Props = {
 
 export default function PlayerOverlay({ video, index, total, onPrev, onNext, onClose, onEdit, onPickPose }: Props) {
   useEffect(() => {
+    lockScroll();
+    return () => unlockScroll();
+  }, []);
+
+  useEffect(() => {
     function handleKey(event: KeyboardEvent) {
       if (event.key === "Escape") onClose();
       if (event.key === "ArrowLeft") onPrev?.();
       if (event.key === "ArrowRight") onNext?.();
     }
     window.addEventListener("keydown", handleKey);
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      window.removeEventListener("keydown", handleKey);
-      document.body.style.overflow = previousOverflow;
-    };
+    return () => window.removeEventListener("keydown", handleKey);
   }, [onClose, onNext, onPrev]);
 
   const playback = video.remoteUrl || video.temporaryUrl || video.playbackUrl;
