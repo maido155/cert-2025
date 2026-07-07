@@ -57,6 +57,31 @@ export type Draft = {
   poses: string[];
 };
 
+export type EditAction = "edit" | "create" | "hide" | "unhide" | "delete" | "restore" | "revert";
+
+// Snapshot completo de los campos que la app puede editar de un video.
+// Para videos base es el estado editable resultante; para prácticas nuevas
+// (is_new) contiene el registro completo.
+export type EditOverlay = Partial<EditableVideo>;
+
+export type EditRow = {
+  videoId: string;
+  overlay: EditOverlay;
+  isNew: boolean;
+  deleted: boolean;
+};
+
+export type HistoryEntry = {
+  id: number;
+  videoId: string;
+  title: string | null;
+  editor: string;
+  action: EditAction;
+  before: EditOverlay | null;
+  after: EditOverlay | null;
+  createdAt: string;
+};
+
 export type AppData = {
   generatedAt: string;
   storageStrategy: {

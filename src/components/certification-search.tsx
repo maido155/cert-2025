@@ -1,15 +1,17 @@
 "use client";
 
-import { Download, FileUp, MoreVertical, RotateCcw, Triangle, Upload } from "lucide-react";
+import { CloudUpload, Download, FileUp, History, MoreVertical, RotateCcw, Triangle, Upload } from "lucide-react";
 import { ChangeEvent, useEffect, useMemo, useRef, useState } from "react";
 import type { AppData, Draft, EditableVideo, Pose } from "@/lib/types";
 import { autoTitle, cleanTags, matchesText, uniquePoseMap } from "@/lib/format";
-import { useLibrary } from "@/lib/use-library";
+import { useCloudLibrary } from "@/lib/use-library";
 import SearchBar, { type Suggestion } from "@/components/search-bar";
 import FilterChips, { type FilterToken, type SortKey } from "@/components/filter-chips";
 import VideoGrid from "@/components/video-grid";
 import PlayerOverlay from "@/components/player-overlay";
 import PracticeModal from "@/components/practice-modal";
+import HistoryPanel from "@/components/history-panel";
+import EditorNameModal from "@/components/editor-name-modal";
 
 type Props = {
   data: AppData;
@@ -44,7 +46,8 @@ function toDraft(video: EditableVideo): Draft {
 }
 
 export default function CertificationSearch({ data }: Props) {
-  const { videos, saveVideos, restoreBase, exportBackup, importBackup } = useLibrary(data.videos);
+  const { videos, cloud, editorName, setEditorName, save, revert, restoreBase, exportBackup, importBackup, hasLocalEdits, pushLocalToCloud } =
+    useCloudLibrary(data.videos);
   const [query, setQuery] = useState("");
   const [pose, setPose] = useState("");
   const [group, setGroup] = useState("");
@@ -58,8 +61,34 @@ export default function CertificationSearch({ data }: Props) {
   const [draft, setDraft] = useState<Draft>(emptyDraft);
   const [newFile, setNewFile] = useState<File | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showHistory, setShowHistory] = useState(false);
+  const [showName, setShowName] = useState(false);
+  const [showLocalOffer, setShowLocalOffer] = useState(false);
+  const pendingSaveRef = useRef<(() => void) | null>(null);
   const importRef = useRef<HTMLInputElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (cloud) setShowLocalOffer(hasLocalEdits());
+  }, [cloud, hasLocalEdits]);
+
+  // Si la nube está activa y aún no hay firma, pide el nombre antes de guardar.
+  function withEditor(run: () => void) {
+    if (cloud && !editorName) {
+      pendingSaveRef.current = run;
+      setShowName(true);
+      return;
+    }
+    run();
+  }
+
+  function handleNameSave(name: string) {
+    setEditorName(name);
+    setShowName(false);
+    const run = pendingSaveRef.current;
+    pendingSaveRef.current = null;
+    if (run) run();
+  }
 
   useEffect(() => {
     if (!menuOpen) return;
@@ -169,38 +198,41 @@ export default function CertificationSearch({ data }: Props) {
 
   function saveDraft() {
     if (!editing) return;
+    const target = editing;
     const selected = draft.poses.map((slug) => allPoses.find((item) => item.slug === slug)).filter(Boolean) as Pose[];
-    const next = videos.map((video) =>
-      video.id === editing.id
-        ? {
-            ...video,
-            title: draft.title.trim() || video.title,
-            date: draft.date || video.date,
-            source: draft.source.trim() || video.source,
-            tags: cleanTags(draft.tagsText),
-            notes: draft.notes,
-            contributor: draft.contributor,
-            remoteUrl: draft.remoteUrl,
-            playbackUrl: draft.remoteUrl || video.temporaryUrl || video.playbackUrl,
-            poses: selected.length ? selected : video.poses,
-          }
-        : video,
-    );
-    saveVideos(next);
+    const nextVideo: EditableVideo = {
+      ...target,
+      title: draft.title.trim() || target.title,
+      date: draft.date || target.date,
+      source: draft.source.trim() || target.source,
+      tags: cleanTags(draft.tagsText),
+      notes: draft.notes,
+      contributor: draft.contributor,
+      remoteUrl: draft.remoteUrl,
+      playbackUrl: draft.remoteUrl || target.temporaryUrl || target.playbackUrl,
+      poses: selected.length ? selected : target.poses,
+    };
+    const next = videos.map((video) => (video.id === target.id ? nextVideo : video));
+    withEditor(() => save({ next, video: nextVideo, action: "edit" }));
     closeModal();
   }
 
   function hideEditing() {
     if (!editing) return;
-    saveVideos(videos.map((video) => (video.id === editing.id ? { ...video, hidden: true } : video)));
-    if (watchingId === editing.id) setWatchingId(null);
+    const target = editing;
+    const nextVideo = { ...target, hidden: true };
+    const next = videos.map((video) => (video.id === target.id ? nextVideo : video));
+    withEditor(() => save({ next, video: nextVideo, action: "hide" }));
+    if (watchingId === target.id) setWatchingId(null);
     closeModal();
   }
 
   function deleteEditing() {
     if (!editing) return;
-    saveVideos(videos.filter((video) => video.id !== editing.id));
-    if (watchingId === editing.id) setWatchingId(null);
+    const target = editing;
+    const next = videos.filter((video) => video.id !== target.id);
+    withEditor(() => save({ next, video: target, action: "delete", deleted: true }));
+    if (watchingId === target.id) setWatchingId(null);
     closeModal();
   }
 
@@ -234,7 +266,7 @@ export default function CertificationSearch({ data }: Props) {
       uploaded: true,
       createdAt: now,
     };
-    saveVideos([item, ...videos]);
+    withEditor(() => save({ next: [item, ...videos], video: item, action: "create", isNew: true }));
     closeModal();
     setWatchingId(item.id);
   }
@@ -277,15 +309,46 @@ export default function CertificationSearch({ data }: Props) {
             </button>
             {menuOpen ? (
               <div className="menu" role="menu">
+                {cloud ? (
+                  <div className="menuSignature">
+                    <span>Firmando como</span>
+                    <strong>{editorName || "sin nombre"}</strong>
+                  </div>
+                ) : null}
+                {cloud ? (
+                  <button onClick={() => { setMenuOpen(false); setShowHistory(true); }} type="button">
+                    <History size={16} /> Historial de cambios
+                  </button>
+                ) : null}
+                {cloud ? (
+                  <button onClick={() => { setMenuOpen(false); setShowName(true); }} type="button">
+                    <RotateCcw size={16} /> Cambiar mi nombre
+                  </button>
+                ) : null}
+                {cloud && showLocalOffer ? (
+                  <button
+                    onClick={async () => {
+                      setMenuOpen(false);
+                      if (!window.confirm("Esto sube tus cambios locales a la biblioteca compartida. ¿Continuar?")) return;
+                      await pushLocalToCloud();
+                      setShowLocalOffer(false);
+                    }}
+                    type="button"
+                  >
+                    <CloudUpload size={16} /> Subir mis cambios locales
+                  </button>
+                ) : null}
                 <button onClick={() => { exportBackup(); setMenuOpen(false); }} type="button">
                   <Download size={16} /> Respaldar biblioteca
                 </button>
                 <button onClick={() => { importRef.current?.click(); setMenuOpen(false); }} type="button">
                   <FileUp size={16} /> Cargar respaldo
                 </button>
-                <button className="menuDanger" onClick={() => { setMenuOpen(false); restore(); }} type="button">
-                  <RotateCcw size={16} /> Volver al origen
-                </button>
+                {!cloud ? (
+                  <button className="menuDanger" onClick={() => { setMenuOpen(false); restore(); }} type="button">
+                    <RotateCcw size={16} /> Volver al origen
+                  </button>
+                ) : null}
               </div>
             ) : null}
           </div>
@@ -346,6 +409,19 @@ export default function CertificationSearch({ data }: Props) {
           onHide={modalMode === "edit" ? hideEditing : undefined}
           onDelete={modalMode === "edit" ? deleteEditing : undefined}
           onClose={closeModal}
+        />
+      ) : null}
+
+      {showHistory ? <HistoryPanel onClose={() => setShowHistory(false)} onRevert={revert} /> : null}
+
+      {showName ? (
+        <EditorNameModal
+          initial={editorName}
+          onSave={handleNameSave}
+          onClose={() => {
+            setShowName(false);
+            pendingSaveRef.current = null;
+          }}
         />
       ) : null}
     </main>

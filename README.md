@@ -51,6 +51,28 @@ ACCESS_CODE=<palabra de paso compartida>              # activa la puerta de acce
 
 Con `NEXT_PUBLIC_VIDEO_BASE_URL` definida, la app reproduce desde R2 (`{base}/{remoteKey}`); sin ella (dev local) streamea desde `D:\` vía `/api/videos/[id]`.
 
+### Ediciones compartidas (Cloudflare D1)
+
+Con `NEXT_PUBLIC_CLOUD_EDITS=1` y las credenciales de D1, todas las ediciones (títulos, tags, notas, posturas, ocultar/borrar, prácticas nuevas) se guardan en una biblioteca compartida en la nube en vez de solo en el navegador. Cada hermano firma con su nombre (se pide una vez) y hay un historial de cambios con opción de deshacer.
+
+Provisión de la base de datos:
+
+```powershell
+npx wrangler d1 create cert-ashtanga-2025
+npx wrangler d1 execute cert-ashtanga-2025 --remote --file scripts/d1-schema.sql --yes
+```
+
+Variables de entorno (Vercel prod + `.env.local`):
+
+```text
+NEXT_PUBLIC_CLOUD_EDITS=1
+CF_ACCOUNT_ID=<account id de Cloudflare>
+CF_D1_DATABASE_ID=<id que devuelve "d1 create">
+CF_API_TOKEN=<token con permiso D1 Edit>
+```
+
+Sin estas variables la app cae al modo local (localStorage), como antes. Rutas: `GET/POST /api/edits`, `GET /api/history`, `POST /api/revert` (todas detrás de la puerta de acceso).
+
 ### Puerta de acceso
 
 Si `ACCESS_CODE` está definida, `src/middleware.ts` exige la palabra de paso (pantalla `/acceso`, cookie de ~180 días). Sin la variable, la app queda abierta (dev local). Nota: los MP4 en R2 quedan en URLs públicas pero no adivinables; la puerta protege la app, no cada archivo.
